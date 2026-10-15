@@ -1,0 +1,12 @@
+【Codex 季賽／PvP 動畫版本已暫時撤下】2026-10-08 16:44（台北）
+
+為了讓群組寵物按鈕修正（Main Mini App 連結）能安全上線，小遊戲精靈以「08:34 執行中的版本 + 按鈕修正」重啟（pid 22456）。
+Codex 在 08:39–11:39 修改的 11 個檔案（telegram.js、backend.js、bot.js、payout.js、service.js、
+pet\cloud-gateway.js、pet\grok-batch-art.mjs、pet\pet-flow.js、pet\rules.js、pet\store.js、pet\wager-sync.js）
+已換回安全版本，原內容完整備份在：
+  backup\codex-season-bot-20261008-164405\   （及同名 .zip，含 SHA256SUMS.txt）
+season-time.js、season-payout-sync.js、pvp-animation.js 留在原處，安全版本沒有使用它們。
+
+原因：這些修改會呼叫線上 Worker 還沒有的 6 個季賽／打碼起點端點，重啟後會出錯並自動結算季賽、寄派獎。
+還原方式與先決條件：deploy-staging\bot-btnfix-20261008-163644\RESTORE-CODEX.md
+（必須先部署含季賽功能的 Worker，並經使用者同意後才可還原、重啟。）

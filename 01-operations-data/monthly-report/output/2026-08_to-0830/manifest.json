@@ -1,0 +1,39 @@
+{
+  "month": "2026-08",
+  "start": "2026-08-01",
+  "end": "2026-08-30",
+  "created": "2026-10-01T04:02:10.469Z",
+  "slides": [
+    {
+      "brand": "song",
+      "layout": "cover",
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-08_to-0830\\song\\20-cover.png"
+    },
+    {
+      "brand": "song",
+      "layout": "kpi",
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-08_to-0830\\song\\21-kpi.png"
+    },
+    {
+      "brand": "song",
+      "layout": "tiers",
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-08_to-0830\\song\\22-tiers.png"
+    },
+    {
+      "brand": "song",
+      "layout": "machines",
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-08_to-0830\\song\\23-machines.png"
+    },
+    {
+      "brand": "song",
+      "layout": "rtp",
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-08_to-0830\\song\\24-rtp.png"
+    },
+    {
+      "brand": "song",
+      "layout": "strategy",
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-08_to-0830\\song\\25-strategy.png"
+    }
+  ],
+  "pptx": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-08_to-0830\\月報-2026-08_to-0830.pptx"
+}

@@ -1,0 +1,335 @@
+{
+  "day": "2026-08-01",
+  "brands": {
+    "song": {
+      "session": "logged-in",
+      "vendorGameSTMT": [
+        {
+          "format": "YYYY-MM-DD HH:mm:ss",
+          "body": {
+            "advertiserId": null,
+            "start": "2026-08-01 00:00:00",
+            "stop": "2026-08-01 23:59:59"
+          },
+          "http": 200,
+          "status": 2,
+          "msg": "success",
+          "rows": 261,
+          "fields": [
+            "gid",
+            "vendor_id",
+            "game_id",
+            "description",
+            "gameName",
+            "bet",
+            "pay",
+            "validBet",
+            "event",
+            "betCount",
+            "betUser",
+            "unduplicatedUser",
+            "RTP",
+            "NPM",
+            "netIncome"
+          ],
+          "sumValidBet": 196654979
+        },
+        {
+          "format": "YYYY/MM/DD HH:mm:ss",
+          "body": {
+            "advertiserId": null,
+            "start": "2026/08/01 00:00:00",
+            "stop": "2026/08/01 23:59:59"
+          },
+          "http": 200,
+          "status": 2,
+          "msg": "success",
+          "rows": 261,
+          "fields": [
+            "gid",
+            "vendor_id",
+            "game_id",
+            "description",
+            "gameName",
+            "bet",
+            "pay",
+            "validBet",
+            "event",
+            "betCount",
+            "betUser",
+            "unduplicatedUser",
+            "RTP",
+            "NPM",
+            "netIncome"
+          ],
+          "sumValidBet": 196654979
+        },
+        {
+          "format": "YYYY-MM-DD",
+          "body": {
+            "advertiserId": null,
+            "start": "2026-08-01",
+            "stop": "2026-08-01"
+          },
+          "http": 200,
+          "status": 2,
+          "msg": "success",
+          "rows": 90,
+          "fields": [
+            "gid",
+            "vendor_id",
+            "game_id",
+            "description",
+            "gameName",
+            "bet",
+            "pay",
+            "validBet",
+            "event",
+            "betCount",
+            "betUser",
+            "unduplicatedUser",
+            "RTP",
+            "NPM",
+            "netIncome"
+          ],
+          "sumValidBet": 10764092
+        },
+        {
+          "format": "YYYY/MM/DD",
+          "body": {
+            "advertiserId": null,
+            "start": "2026/08/01",
+            "stop": "2026/08/01"
+          },
+          "http": 200,
+          "status": 2,
+          "msg": "success",
+          "rows": 90,
+          "fields": [
+            "gid",
+            "vendor_id",
+            "game_id",
+            "description",
+            "gameName",
+            "bet",
+            "pay",
+            "validBet",
+            "event",
+            "betCount",
+            "betUser",
+            "unduplicatedUser",
+            "RTP",
+            "NPM",
+            "netIncome"
+          ],
+          "sumValidBet": 10764092
+        }
+      ],
+      "purchaseRank": {
+        "http": 200,
+        "status": 2,
+        "rows": 71,
+        "fields": [
+          "a_id",
+          "price",
+          "aId",
+          "nickname",
+          "vip",
+          "lastChargeTime",
+          "totalCharge",
+          "money",
+          "firstLogin",
+          "lastLogin",
+          "totalRound",
+          "lineId",
+          "gameDays"
+        ],
+        "sum": 71360
+      },
+      "gameList": {
+        "http": 200,
+        "status": 2,
+        "msg": "success",
+        "rows": 795,
+        "fields": [
+          "id",
+          "vendor_id",
+          "name",
+          "vip",
+          "status",
+          "description",
+          "entry_tag",
+          "left_top_tag",
+          "other_tags",
+          "pic_large",
+          "pic_small"
+        ]
+      }
+    },
+    "qz": {
+      "session": "logged-in",
+      "vendorGameSTMT": [
+        {
+          "format": "YYYY-MM-DD HH:mm:ss",
+          "body": {
+            "advertiserId": null,
+            "start": "2026-08-01 00:00:00",
+            "stop": "2026-08-01 23:59:59"
+          },
+          "http": 200,
+          "status": 2,
+          "msg": "success",
+          "rows": 173,
+          "fields": [
+            "gid",
+            "vendor_id",
+            "game_id",
+            "description",
+            "gameName",
+            "bet",
+            "pay",
+            "validBet",
+            "event",
+            "betCount",
+            "betUser",
+            "unduplicatedUser",
+            "RTP",
+            "NPM",
+            "netIncome"
+          ],
+          "sumValidBet": 191582469
+        },
+        {
+          "format": "YYYY/MM/DD HH:mm:ss",
+          "body": {
+            "advertiserId": null,
+            "start": "2026/08/01 00:00:00",
+            "stop": "2026/08/01 23:59:59"
+          },
+          "http": 200,
+          "status": 2,
+          "msg": "success",
+          "rows": 173,
+          "fields": [
+            "gid",
+            "vendor_id",
+            "game_id",
+            "description",
+            "gameName",
+            "bet",
+            "pay",
+            "validBet",
+            "event",
+            "betCount",
+            "betUser",
+            "unduplicatedUser",
+            "RTP",
+            "NPM",
+            "netIncome"
+          ],
+          "sumValidBet": 191582469
+        },
+        {
+          "format": "YYYY-MM-DD",
+          "body": {
+            "advertiserId": null,
+            "start": "2026-08-01",
+            "stop": "2026-08-01"
+          },
+          "http": 200,
+          "status": 2,
+          "msg": "success",
+          "rows": 66,
+          "fields": [
+            "gid",
+            "vendor_id",
+            "game_id",
+            "description",
+            "gameName",
+            "bet",
+            "pay",
+            "validBet",
+            "event",
+            "betCount",
+            "betUser",
+            "unduplicatedUser",
+            "RTP",
+            "NPM",
+            "netIncome"
+          ],
+          "sumValidBet": 5470176
+        },
+        {
+          "format": "YYYY/MM/DD",
+          "body": {
+            "advertiserId": null,
+            "start": "2026/08/01",
+            "stop": "2026/08/01"
+          },
+          "http": 200,
+          "status": 2,
+          "msg": "success",
+          "rows": 66,
+          "fields": [
+            "gid",
+            "vendor_id",
+            "game_id",
+            "description",
+            "gameName",
+            "bet",
+            "pay",
+            "validBet",
+            "event",
+            "betCount",
+            "betUser",
+            "unduplicatedUser",
+            "RTP",
+            "NPM",
+            "netIncome"
+          ],
+          "sumValidBet": 5470176
+        }
+      ],
+      "purchaseRank": {
+        "http": 200,
+        "status": 2,
+        "rows": 61,
+        "fields": [
+          "a_id",
+          "price",
+          "aId",
+          "nickname",
+          "vip",
+          "lastChargeTime",
+          "totalCharge",
+          "money",
+          "firstLogin",
+          "lastLogin",
+          "totalRound",
+          "lineId",
+          "gameDays"
+        ],
+        "sum": 84610
+      },
+      "gameList": {
+        "http": 200,
+        "status": 2,
+        "msg": "success",
+        "rows": 356,
+        "fields": [
+          "id",
+          "vendor_id",
+          "name",
+          "vip",
+          "status",
+          "description",
+          "entry_tag",
+          "left_top_tag",
+          "other_tags",
+          "pic_large",
+          "pic_small"
+        ]
+      }
+    }
+  }
+}

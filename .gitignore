@@ -1,0 +1,13 @@
+node_modules/
+.env
+*.local.json
+*.dpapi.json
+*.key
+*.pid
+*.lock
+logs/
+state/
+staging/
+browser-profile/
+.auth/
+.cache/

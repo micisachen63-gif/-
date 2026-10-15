@@ -1,0 +1,165 @@
+{
+  "month": "2026-09",
+  "start": "2026-09-01",
+  "end": "2026-09-30",
+  "created": "2026-10-01T04:32:41.050Z",
+  "slides": [
+    {
+      "brand": "win",
+      "layout": "cover",
+      "no": 1,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\win\\01-cover.png"
+    },
+    {
+      "brand": "win",
+      "layout": "summary",
+      "no": 2,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\win\\02-summary.png"
+    },
+    {
+      "brand": "win",
+      "layout": "channel",
+      "no": 3,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\win\\03-channel.png"
+    },
+    {
+      "brand": "win",
+      "layout": "activity",
+      "no": 4,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\win\\04-activity.png"
+    },
+    {
+      "brand": "win",
+      "layout": "winners",
+      "no": 5,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\win\\05-winners.png"
+    },
+    {
+      "brand": "win",
+      "layout": "bleed",
+      "no": 6,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\win\\06-bleed.png"
+    },
+    {
+      "brand": "win",
+      "layout": "vip",
+      "no": 7,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\win\\07-vip.png"
+    },
+    {
+      "brand": "win",
+      "layout": "vipinsight",
+      "no": 8,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\win\\08-vipinsight.png"
+    },
+    {
+      "brand": "win",
+      "layout": "payers",
+      "no": 9,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\win\\09-payers.png"
+    },
+    {
+      "brand": "win",
+      "layout": "vipdrive",
+      "no": 10,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\win\\10-vipdrive.png"
+    },
+    {
+      "brand": "win",
+      "layout": "bets",
+      "no": 12,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\win\\12-bets.png"
+    },
+    {
+      "brand": "win",
+      "layout": "rtp",
+      "no": 13,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\win\\13-rtp.png"
+    },
+    {
+      "brand": "win",
+      "layout": "machineinsight",
+      "no": 14,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\win\\14-machineinsight.png"
+    },
+    {
+      "brand": "win",
+      "layout": "strategy",
+      "no": 19,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\win\\19-strategy.png"
+    },
+    {
+      "brand": "song",
+      "layout": "cover",
+      "no": 20,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\song\\20-cover.png"
+    },
+    {
+      "brand": "song",
+      "layout": "kpi",
+      "no": 21,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\song\\21-kpi.png"
+    },
+    {
+      "brand": "song",
+      "layout": "tiers",
+      "no": 22,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\song\\22-tiers.png"
+    },
+    {
+      "brand": "song",
+      "layout": "machines",
+      "no": 23,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\song\\23-machines.png"
+    },
+    {
+      "brand": "song",
+      "layout": "rtp",
+      "no": 24,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\song\\24-rtp.png"
+    },
+    {
+      "brand": "song",
+      "layout": "strategy",
+      "no": 25,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\song\\25-strategy.png"
+    },
+    {
+      "brand": "qz",
+      "layout": "cover",
+      "no": 20,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\qz\\20-cover.png"
+    },
+    {
+      "brand": "qz",
+      "layout": "kpi",
+      "no": 21,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\qz\\21-kpi.png"
+    },
+    {
+      "brand": "qz",
+      "layout": "tiers",
+      "no": 22,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\qz\\22-tiers.png"
+    },
+    {
+      "brand": "qz",
+      "layout": "machines",
+      "no": 23,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\qz\\23-machines.png"
+    },
+    {
+      "brand": "qz",
+      "layout": "rtp",
+      "no": 24,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\qz\\24-rtp.png"
+    },
+    {
+      "brand": "qz",
+      "layout": "strategy",
+      "no": 25,
+      "png": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\qz\\25-strategy.png"
+    }
+  ],
+  "pptx": "C:\\Users\\User\\Documents\\ChatGPT\\月報簡報\\output\\2026-09\\月報-2026-09.pptx"
+}

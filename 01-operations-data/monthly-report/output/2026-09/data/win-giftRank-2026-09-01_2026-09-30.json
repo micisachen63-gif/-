@@ -1,0 +1,1838 @@
+[
+  {
+    "from": 10000001055,
+    "to": 10000000025,
+    "give_money": 323910,
+    "receive_money": -154464,
+    "rang_money": 169446,
+    "from_nickname": "皮皮蝦跟我走",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000021356,
+    "to": 10000000030,
+    "give_money": 275964,
+    "receive_money": -111024,
+    "rang_money": 164940,
+    "from_nickname": "贏麻了21358",
+    "to_nickname": "鴻金寶財庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000019196,
+    "give_money": 155760,
+    "receive_money": -49410,
+    "rang_money": 106350,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "贏麻了0327"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000008571,
+    "give_money": 165360,
+    "receive_money": -61854,
+    "rang_money": 103506,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "NNhui"
+  },
+  {
+    "from": 10000016092,
+    "to": 10000000025,
+    "give_money": 109434,
+    "receive_money": -35280,
+    "rang_money": 74154,
+    "from_nickname": "少峻",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000017816,
+    "give_money": 93600,
+    "receive_money": -23180,
+    "rang_money": 70420,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "破擊敗特"
+  },
+  {
+    "from": 10000011491,
+    "to": 10000000025,
+    "give_money": 122732,
+    "receive_money": -52440,
+    "rang_money": 70292,
+    "from_nickname": "漢頓",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000001466,
+    "to": 10000000025,
+    "give_money": 77836,
+    "receive_money": -25560,
+    "rang_money": 52276,
+    "from_nickname": "Aurora",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000000129,
+    "give_money": 281952,
+    "receive_money": -235948,
+    "rang_money": 46004,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "福祿壽"
+  },
+  {
+    "from": 10000019365,
+    "to": 10000000030,
+    "give_money": 74786,
+    "receive_money": -30000,
+    "rang_money": 44786,
+    "from_nickname": "Han Sheng",
+    "to_nickname": "鴻金寶財庫"
+  },
+  {
+    "from": 10000004555,
+    "to": 10000000025,
+    "give_money": 111386,
+    "receive_money": -67560,
+    "rang_money": 43826,
+    "from_nickname": "唐三藏",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000011281,
+    "to": 10000000025,
+    "give_money": 61000,
+    "receive_money": -19200,
+    "rang_money": 41800,
+    "from_nickname": "贏麻了11283",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000003183,
+    "give_money": 61800,
+    "receive_money": -30012,
+    "rang_money": 31788,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "維霖"
+  },
+  {
+    "from": 10000001216,
+    "to": 10000000030,
+    "give_money": 45994,
+    "receive_money": -15120,
+    "rang_money": 30874,
+    "from_nickname": "阿泓",
+    "to_nickname": "鴻金寶財庫"
+  },
+  {
+    "from": 10000000896,
+    "to": 10000000025,
+    "give_money": 164700,
+    "receive_money": -134028,
+    "rang_money": 30672,
+    "from_nickname": "贏麻了892",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000019284,
+    "to": 10000012480,
+    "give_money": 60300,
+    "receive_money": -29700,
+    "rang_money": 30600,
+    "from_nickname": "舜子哥",
+    "to_nickname": "楊秉霖"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000022354,
+    "give_money": 77400,
+    "receive_money": -46970,
+    "rang_money": 30430,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "森林小熊熊"
+  },
+  {
+    "from": 10000004030,
+    "to": 10000000025,
+    "give_money": 42700,
+    "receive_money": -17400,
+    "rang_money": 25300,
+    "from_nickname": "真假贏麻了0825",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000005835,
+    "to": 10000000025,
+    "give_money": 61000,
+    "receive_money": -36000,
+    "rang_money": 25000,
+    "from_nickname": "松鼠",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000010563,
+    "to": 10000014096,
+    "give_money": 24700,
+    "receive_money": 0,
+    "rang_money": 24700,
+    "from_nickname": "若若",
+    "to_nickname": "S威S"
+  },
+  {
+    "from": 10000012480,
+    "to": 10000000030,
+    "give_money": 40260,
+    "receive_money": -17400,
+    "rang_money": 22860,
+    "from_nickname": "楊秉霖",
+    "to_nickname": "鴻金寶財庫"
+  },
+  {
+    "from": 10000010162,
+    "to": 10000000030,
+    "give_money": 76250,
+    "receive_money": -53640,
+    "rang_money": 22610,
+    "from_nickname": "娛樂城首選贏麻了",
+    "to_nickname": "鴻金寶財庫"
+  },
+  {
+    "from": 10000007585,
+    "to": 10000000025,
+    "give_money": 29890,
+    "receive_money": -9840,
+    "rang_money": 20050,
+    "from_nickname": "張哲",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000019958,
+    "give_money": 27168,
+    "receive_money": -7808,
+    "rang_money": 19360,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "BinGKinG01"
+  },
+  {
+    "from": 10000013843,
+    "to": 10000000025,
+    "give_money": 27450,
+    "receive_money": -9000,
+    "rang_money": 18450,
+    "from_nickname": "妮欸",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000013490,
+    "give_money": 18000,
+    "receive_money": 0,
+    "rang_money": 18000,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "CR"
+  },
+  {
+    "from": 10000000235,
+    "to": 10000000030,
+    "give_money": 24400,
+    "receive_money": -7080,
+    "rang_money": 17320,
+    "from_nickname": "子揚",
+    "to_nickname": "鴻金寶財庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000000889,
+    "give_money": 16800,
+    "receive_money": 0,
+    "rang_money": 16800,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "小陳"
+  },
+  {
+    "from": 10000003153,
+    "to": 10000000025,
+    "give_money": 19520,
+    "receive_money": -3600,
+    "rang_money": 15920,
+    "from_nickname": "閃亮大禿頭",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000023208,
+    "give_money": 52200,
+    "receive_money": -36600,
+    "rang_money": 15600,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "中聯阿鑫"
+  },
+  {
+    "from": 10000019284,
+    "to": 10000022167,
+    "give_money": 16200,
+    "receive_money": -1000,
+    "rang_money": 15200,
+    "from_nickname": "舜子哥",
+    "to_nickname": "我覺得自己很厲害"
+  },
+  {
+    "from": 10000022339,
+    "to": 10000000025,
+    "give_money": 22570,
+    "receive_money": -7440,
+    "rang_money": 15130,
+    "from_nickname": "領到手抽筋",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000003166,
+    "to": 10000000025,
+    "give_money": 15860,
+    "receive_money": -1200,
+    "rang_money": 14660,
+    "from_nickname": "隆隆",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000013844,
+    "to": 10000000025,
+    "give_money": 21838,
+    "receive_money": -7200,
+    "rang_money": 14638,
+    "from_nickname": "Gaga",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000020961,
+    "give_money": 25920,
+    "receive_money": -11590,
+    "rang_money": 14330,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "淶財"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000017313,
+    "give_money": 13800,
+    "receive_money": 0,
+    "rang_money": 13800,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "嘎的給給"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000019751,
+    "give_money": 13080,
+    "receive_money": 0,
+    "rang_money": 13080,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "天天要開心"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000002585,
+    "give_money": 11388,
+    "receive_money": 0,
+    "rang_money": 11388,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "Tsai"
+  },
+  {
+    "from": 10000012266,
+    "to": 10000022616,
+    "give_money": 11000,
+    "receive_money": 0,
+    "rang_money": 11000,
+    "from_nickname": "隨便都麻贏",
+    "to_nickname": "outlook卡"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000021007,
+    "give_money": 48720,
+    "receive_money": -37820,
+    "rang_money": 10900,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "熱帶風暴"
+  },
+  {
+    "from": 10000012422,
+    "to": 10000000025,
+    "give_money": 15006,
+    "receive_money": -4152,
+    "rang_money": 10854,
+    "from_nickname": "豪志",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000019284,
+    "to": 10000000030,
+    "give_money": 17080,
+    "receive_money": -6480,
+    "rang_money": 10600,
+    "from_nickname": "舜子哥",
+    "to_nickname": "鴻金寶財庫"
+  },
+  {
+    "from": 10000008534,
+    "to": 10000020893,
+    "give_money": 10000,
+    "receive_money": 0,
+    "rang_money": 10000,
+    "from_nickname": "燒鳩龍哥",
+    "to_nickname": "越南幫安哥"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000017673,
+    "give_money": 9720,
+    "receive_money": 0,
+    "rang_money": 9720,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "小邱發財"
+  },
+  {
+    "from": 10000023364,
+    "to": 10000000025,
+    "give_money": 13420,
+    "receive_money": -4440,
+    "rang_money": 8980,
+    "from_nickname": "葉誌",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000015223,
+    "give_money": 22080,
+    "receive_money": -13420,
+    "rang_money": 8660,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "開心很多紅"
+  },
+  {
+    "from": 10000022616,
+    "to": 10000022339,
+    "give_money": 10000,
+    "receive_money": -1350,
+    "rang_money": 8650,
+    "from_nickname": "outlook卡",
+    "to_nickname": "領到手抽筋"
+  },
+  {
+    "from": 10000000247,
+    "to": 10000000025,
+    "give_money": 14884,
+    "receive_money": -6360,
+    "rang_money": 8524,
+    "from_nickname": "大尾三井壽金庫",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000020591,
+    "to": 10000000025,
+    "give_money": 12810,
+    "receive_money": -4320,
+    "rang_money": 8490,
+    "from_nickname": "亻韋",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000017793,
+    "give_money": 8400,
+    "receive_money": 0,
+    "rang_money": 8400,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "贏麻了17795"
+  },
+  {
+    "from": 10000022699,
+    "to": 10000000030,
+    "give_money": 9150,
+    "receive_money": -1440,
+    "rang_money": 7710,
+    "from_nickname": "想咋啲",
+    "to_nickname": "鴻金寶財庫"
+  },
+  {
+    "from": 10000008534,
+    "to": 10000000030,
+    "give_money": 12200,
+    "receive_money": -4800,
+    "rang_money": 7400,
+    "from_nickname": "燒鳩龍哥",
+    "to_nickname": "鴻金寶財庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000001416,
+    "give_money": 7200,
+    "receive_money": 0,
+    "rang_money": 7200,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "倪崇鈞"
+  },
+  {
+    "from": 10000015909,
+    "to": 10000000025,
+    "give_money": 11956,
+    "receive_money": -4920,
+    "rang_money": 7036,
+    "from_nickname": "坤坤",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000030,
+    "to": 10000020392,
+    "give_money": 6816,
+    "receive_money": 0,
+    "rang_money": 6816,
+    "from_nickname": "鴻金寶財庫",
+    "to_nickname": "857857857"
+  },
+  {
+    "from": 10000000030,
+    "to": 10000022522,
+    "give_money": 6600,
+    "receive_money": 0,
+    "rang_money": 6600,
+    "from_nickname": "鴻金寶財庫",
+    "to_nickname": "Wa Xi"
+  },
+  {
+    "from": 10000019284,
+    "to": 10000008534,
+    "give_money": 19500,
+    "receive_money": -13000,
+    "rang_money": 6500,
+    "from_nickname": "舜子哥",
+    "to_nickname": "燒鳩龍哥"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000000265,
+    "give_money": 6480,
+    "receive_money": 0,
+    "rang_money": 6480,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "商蘋果總行"
+  },
+  {
+    "from": 10000000333,
+    "to": 10000000025,
+    "give_money": 10980,
+    "receive_money": -4800,
+    "rang_money": 6180,
+    "from_nickname": "李小黃",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000010563,
+    "to": 10000000030,
+    "give_money": 6100,
+    "receive_money": 0,
+    "rang_money": 6100,
+    "from_nickname": "若若",
+    "to_nickname": "鴻金寶財庫"
+  },
+  {
+    "from": 10000019284,
+    "to": 10000020893,
+    "give_money": 6000,
+    "receive_money": 0,
+    "rang_money": 6000,
+    "from_nickname": "舜子哥",
+    "to_nickname": "越南幫安哥"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000022903,
+    "give_money": 6000,
+    "receive_money": 0,
+    "rang_money": 6000,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "硬的好尷尬"
+  },
+  {
+    "from": 10000018857,
+    "to": 10000000025,
+    "give_money": 7930,
+    "receive_money": -2016,
+    "rang_money": 5914,
+    "from_nickname": "Gao Jun",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000003656,
+    "give_money": 5880,
+    "receive_money": 0,
+    "rang_money": 5880,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "秒秒"
+  },
+  {
+    "from": 10000018909,
+    "to": 10000000025,
+    "give_money": 11834,
+    "receive_money": -6000,
+    "rang_money": 5834,
+    "from_nickname": "Hsu6666",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000018135,
+    "to": 10000000025,
+    "give_money": 8540,
+    "receive_money": -2880,
+    "rang_money": 5660,
+    "from_nickname": "凡皓",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000017377,
+    "give_money": 6722,
+    "receive_money": -1220,
+    "rang_money": 5502,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "贏麻了17379"
+  },
+  {
+    "from": 10000002046,
+    "to": 10000000025,
+    "give_money": 10004,
+    "receive_money": -4560,
+    "rang_money": 5444,
+    "from_nickname": "YUDA",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000008534,
+    "to": 10000022167,
+    "give_money": 5000,
+    "receive_money": 0,
+    "rang_money": 5000,
+    "from_nickname": "燒鳩龍哥",
+    "to_nickname": "我覺得自己很厲害"
+  },
+  {
+    "from": 10000022132,
+    "to": 10000000030,
+    "give_money": 12200,
+    "receive_money": -7200,
+    "rang_money": 5000,
+    "from_nickname": "贏麻了22134",
+    "to_nickname": "鴻金寶財庫"
+  },
+  {
+    "from": 10000000775,
+    "to": 10000000030,
+    "give_money": 9882,
+    "receive_money": -5400,
+    "rang_money": 4482,
+    "from_nickname": "敢不敢給一句話",
+    "to_nickname": "鴻金寶財庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000015616,
+    "give_money": 102000,
+    "receive_money": -97600,
+    "rang_money": 4400,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "滷肉飯"
+  },
+  {
+    "from": 10000020893,
+    "to": 10000010895,
+    "give_money": 4333,
+    "receive_money": 0,
+    "rang_money": 4333,
+    "from_nickname": "越南幫安哥",
+    "to_nickname": "小霖哥串燒"
+  },
+  {
+    "from": 10000003381,
+    "to": 10000000025,
+    "give_money": 10980,
+    "receive_money": -6720,
+    "rang_money": 4260,
+    "from_nickname": "土城阿謙",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000002545,
+    "to": 10000000030,
+    "give_money": 5856,
+    "receive_money": -1920,
+    "rang_money": 3936,
+    "from_nickname": "劉小歐",
+    "to_nickname": "鴻金寶財庫"
+  },
+  {
+    "from": 10000019284,
+    "to": 10000000025,
+    "give_money": 13420,
+    "receive_money": -9600,
+    "rang_money": 3820,
+    "from_nickname": "舜子哥",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000010185,
+    "to": 10000004555,
+    "give_money": 4200,
+    "receive_money": -500,
+    "rang_money": 3700,
+    "from_nickname": "打台打到頭破血流",
+    "to_nickname": "唐三藏"
+  },
+  {
+    "from": 10000011491,
+    "to": 10000011409,
+    "give_money": 3600,
+    "receive_money": 0,
+    "rang_money": 3600,
+    "from_nickname": "漢頓",
+    "to_nickname": "緊張兮兮"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000017597,
+    "give_money": 3600,
+    "receive_money": 0,
+    "rang_money": 3600,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "搖擺走天下1788"
+  },
+  {
+    "from": 10000008534,
+    "to": 10000012480,
+    "give_money": 3000,
+    "receive_money": 0,
+    "rang_money": 3000,
+    "from_nickname": "燒鳩龍哥",
+    "to_nickname": "楊秉霖"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000000821,
+    "give_money": 2760,
+    "receive_money": 0,
+    "rang_money": 2760,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "贏麻了817"
+  },
+  {
+    "from": 10000002081,
+    "to": 10000000025,
+    "give_money": 10126,
+    "receive_money": -7440,
+    "rang_money": 2686,
+    "from_nickname": "綺麗馬鹿野郎",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000004407,
+    "to": 10000000025,
+    "give_money": 3904,
+    "receive_money": -1320,
+    "rang_money": 2584,
+    "from_nickname": "yygg",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000021359,
+    "to": 10000000025,
+    "give_money": 3660,
+    "receive_money": -1200,
+    "rang_money": 2460,
+    "from_nickname": "鑫哥哥來了",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000014597,
+    "give_money": 2400,
+    "receive_money": 0,
+    "rang_money": 2400,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "嘉賓未經"
+  },
+  {
+    "from": 10000000030,
+    "to": 10000014096,
+    "give_money": 2400,
+    "receive_money": 0,
+    "rang_money": 2400,
+    "from_nickname": "鴻金寶財庫",
+    "to_nickname": "S威S"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000018856,
+    "give_money": 2400,
+    "receive_money": 0,
+    "rang_money": 2400,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "贏麻了18858"
+  },
+  {
+    "from": 10000001668,
+    "to": 10000000030,
+    "give_money": 14152,
+    "receive_money": -11880,
+    "rang_money": 2272,
+    "from_nickname": "賴大頭",
+    "to_nickname": "鴻金寶財庫"
+  },
+  {
+    "from": 10000002545,
+    "to": 10000000025,
+    "give_money": 3416,
+    "receive_money": -1200,
+    "rang_money": 2216,
+    "from_nickname": "劉小歐",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000006485,
+    "give_money": 2160,
+    "receive_money": 0,
+    "rang_money": 2160,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "賢拔跋"
+  },
+  {
+    "from": 10000019572,
+    "to": 10000000025,
+    "give_money": 13420,
+    "receive_money": -11400,
+    "rang_money": 2020,
+    "from_nickname": "贏麻了19574",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000022167,
+    "to": 10000010895,
+    "give_money": 2000,
+    "receive_money": 0,
+    "rang_money": 2000,
+    "from_nickname": "我覺得自己很厲害",
+    "to_nickname": "小霖哥串燒"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000003423,
+    "give_money": 1800,
+    "receive_money": 0,
+    "rang_money": 1800,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "發財"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000010185,
+    "give_money": 1800,
+    "receive_money": 0,
+    "rang_money": 1800,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "打台打到頭破血流"
+  },
+  {
+    "from": 10000019572,
+    "to": 10000011281,
+    "give_money": 1728,
+    "receive_money": 0,
+    "rang_money": 1728,
+    "from_nickname": "贏麻了19574",
+    "to_nickname": "贏麻了11283"
+  },
+  {
+    "from": 10000000030,
+    "to": 10000023060,
+    "give_money": 1680,
+    "receive_money": 0,
+    "rang_money": 1680,
+    "from_nickname": "鴻金寶財庫",
+    "to_nickname": "Bbb8"
+  },
+  {
+    "from": 10000017273,
+    "to": 10000000025,
+    "give_money": 2440,
+    "receive_money": -840,
+    "rang_money": 1600,
+    "from_nickname": "小舒舒",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000003130,
+    "to": 10000000025,
+    "give_money": 5002,
+    "receive_money": -3480,
+    "rang_money": 1522,
+    "from_nickname": "贏麻了3129",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000001637,
+    "to": 10000000025,
+    "give_money": 4880,
+    "receive_money": -3480,
+    "rang_money": 1400,
+    "from_nickname": "小黃君",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000003113,
+    "to": 10000000025,
+    "give_money": 2074,
+    "receive_money": -720,
+    "rang_money": 1354,
+    "from_nickname": "小育666",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000022210,
+    "give_money": 1320,
+    "receive_money": 0,
+    "rang_money": 1320,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "歸缸勒看煙火"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000017363,
+    "give_money": 1200,
+    "receive_money": 0,
+    "rang_money": 1200,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "李小智"
+  },
+  {
+    "from": 10000000030,
+    "to": 10000000168,
+    "give_money": 1200,
+    "receive_money": 0,
+    "rang_money": 1200,
+    "from_nickname": "鴻金寶財庫",
+    "to_nickname": "翔"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000012480,
+    "give_money": 1200,
+    "receive_money": 0,
+    "rang_money": 1200,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "楊秉霖"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000009399,
+    "give_money": 1080,
+    "receive_money": 0,
+    "rang_money": 1080,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "阿星"
+  },
+  {
+    "from": 10000005743,
+    "to": 10000006833,
+    "give_money": 1000,
+    "receive_money": 0,
+    "rang_money": 1000,
+    "from_nickname": "佑軒",
+    "to_nickname": "贏麻了6833"
+  },
+  {
+    "from": 10000000030,
+    "to": 10000022167,
+    "give_money": 960,
+    "receive_money": 0,
+    "rang_money": 960,
+    "from_nickname": "鴻金寶財庫",
+    "to_nickname": "我覺得自己很厲害"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000008534,
+    "give_money": 960,
+    "receive_money": 0,
+    "rang_money": 960,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "燒鳩龍哥"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000020761,
+    "give_money": 888,
+    "receive_money": 0,
+    "rang_money": 888,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "請把陳詠翔的運氣全部轉移給我"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000015950,
+    "give_money": 840,
+    "receive_money": 0,
+    "rang_money": 840,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "Yi Lu"
+  },
+  {
+    "from": 10000000791,
+    "to": 10000000025,
+    "give_money": 6100,
+    "receive_money": -5268,
+    "rang_money": 832,
+    "from_nickname": "富桂在天",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000001993,
+    "give_money": 720,
+    "receive_money": 0,
+    "rang_money": 720,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "錒騰"
+  },
+  {
+    "from": 10000001365,
+    "to": 10000000025,
+    "give_money": 1830,
+    "receive_money": -1152,
+    "rang_money": 678,
+    "from_nickname": "實實",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000006072,
+    "give_money": 600,
+    "receive_money": 0,
+    "rang_money": 600,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "廣蕙阿"
+  },
+  {
+    "from": 10000000030,
+    "to": 10000002181,
+    "give_money": 600,
+    "receive_money": 0,
+    "rang_money": 600,
+    "from_nickname": "鴻金寶財庫",
+    "to_nickname": "黑龍轉桌傻輝阿豪"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000004945,
+    "give_money": 600,
+    "receive_money": 0,
+    "rang_money": 600,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "賣水的阿菜"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000012334,
+    "give_money": 600,
+    "receive_money": 0,
+    "rang_money": 600,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "贏麻了12336"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000021600,
+    "give_money": 600,
+    "receive_money": 0,
+    "rang_money": 600,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "賺錢咯小胖"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000001849,
+    "give_money": 600,
+    "receive_money": 0,
+    "rang_money": 600,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "這裡的運氣好"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000003669,
+    "give_money": 600,
+    "receive_money": 0,
+    "rang_money": 600,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "金舞錢689"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000003069,
+    "give_money": 600,
+    "receive_money": 0,
+    "rang_money": 600,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "贏麻了3068"
+  },
+  {
+    "from": 10000000030,
+    "to": 10000016399,
+    "give_money": 600,
+    "receive_money": 0,
+    "rang_money": 600,
+    "from_nickname": "鴻金寶財庫",
+    "to_nickname": "贏麻了16401"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000021265,
+    "give_money": 600,
+    "receive_money": 0,
+    "rang_money": 600,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "TimTing"
+  },
+  {
+    "from": 10000000030,
+    "to": 10000023078,
+    "give_money": 3000,
+    "receive_money": -2440,
+    "rang_money": 560,
+    "from_nickname": "鴻金寶財庫",
+    "to_nickname": "妡妡"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000000218,
+    "give_money": 540,
+    "receive_money": 0,
+    "rang_money": 540,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "爸爸旁邊睡的不是媽媽"
+  },
+  {
+    "from": 10000021359,
+    "to": 10000021557,
+    "give_money": 500,
+    "receive_money": 0,
+    "rang_money": 500,
+    "from_nickname": "鑫哥哥來了",
+    "to_nickname": "小芬"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000010556,
+    "give_money": 14400,
+    "receive_money": -14030,
+    "rang_money": 370,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "我爆了"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000010586,
+    "give_money": 312,
+    "receive_money": 0,
+    "rang_money": 312,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "就是帥"
+  },
+  {
+    "from": 10000021359,
+    "to": 10000022049,
+    "give_money": 250,
+    "receive_money": 0,
+    "rang_money": 250,
+    "from_nickname": "鑫哥哥來了",
+    "to_nickname": "邱鑫鑫"
+  },
+  {
+    "from": 10000021359,
+    "to": 10000021789,
+    "give_money": 250,
+    "receive_money": 0,
+    "rang_money": 250,
+    "from_nickname": "鑫哥哥來了",
+    "to_nickname": "宏哥哥"
+  },
+  {
+    "from": 10000019374,
+    "to": 10000013843,
+    "give_money": 176,
+    "receive_money": 0,
+    "rang_money": 176,
+    "from_nickname": "龍欸",
+    "to_nickname": "妮欸"
+  },
+  {
+    "from": 10000015881,
+    "to": 10000000030,
+    "give_money": 3904,
+    "receive_money": -3864,
+    "rang_money": 40,
+    "from_nickname": "記冏膩",
+    "to_nickname": "鴻金寶財庫"
+  },
+  {
+    "from": 10000000030,
+    "to": 10000015881,
+    "give_money": 3864,
+    "receive_money": -3904,
+    "rang_money": -40,
+    "from_nickname": "鴻金寶財庫",
+    "to_nickname": "記冏膩"
+  },
+  {
+    "from": 10000010556,
+    "to": 10000000025,
+    "give_money": 14030,
+    "receive_money": -14400,
+    "rang_money": -370,
+    "from_nickname": "我爆了",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000023078,
+    "to": 10000000030,
+    "give_money": 2440,
+    "receive_money": -3000,
+    "rang_money": -560,
+    "from_nickname": "妡妡",
+    "to_nickname": "鴻金寶財庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000001365,
+    "give_money": 1152,
+    "receive_money": -1830,
+    "rang_money": -678,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "實實"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000000791,
+    "give_money": 5268,
+    "receive_money": -6100,
+    "rang_money": -832,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "富桂在天"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000003113,
+    "give_money": 720,
+    "receive_money": -2074,
+    "rang_money": -1354,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "小育666"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000001637,
+    "give_money": 3480,
+    "receive_money": -4880,
+    "rang_money": -1400,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "小黃君"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000003130,
+    "give_money": 3480,
+    "receive_money": -5002,
+    "rang_money": -1522,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "贏麻了3129"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000017273,
+    "give_money": 840,
+    "receive_money": -2440,
+    "rang_money": -1600,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "小舒舒"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000019572,
+    "give_money": 11400,
+    "receive_money": -13420,
+    "rang_money": -2020,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "贏麻了19574"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000002545,
+    "give_money": 1200,
+    "receive_money": -3416,
+    "rang_money": -2216,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "劉小歐"
+  },
+  {
+    "from": 10000000030,
+    "to": 10000001668,
+    "give_money": 11880,
+    "receive_money": -14152,
+    "rang_money": -2272,
+    "from_nickname": "鴻金寶財庫",
+    "to_nickname": "賴大頭"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000021359,
+    "give_money": 1200,
+    "receive_money": -3660,
+    "rang_money": -2460,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "鑫哥哥來了"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000004407,
+    "give_money": 1320,
+    "receive_money": -3904,
+    "rang_money": -2584,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "yygg"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000002081,
+    "give_money": 7440,
+    "receive_money": -10126,
+    "rang_money": -2686,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "綺麗馬鹿野郎"
+  },
+  {
+    "from": 10000004555,
+    "to": 10000010185,
+    "give_money": 500,
+    "receive_money": -4200,
+    "rang_money": -3700,
+    "from_nickname": "唐三藏",
+    "to_nickname": "打台打到頭破血流"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000019284,
+    "give_money": 9600,
+    "receive_money": -13420,
+    "rang_money": -3820,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "舜子哥"
+  },
+  {
+    "from": 10000000030,
+    "to": 10000002545,
+    "give_money": 1920,
+    "receive_money": -5856,
+    "rang_money": -3936,
+    "from_nickname": "鴻金寶財庫",
+    "to_nickname": "劉小歐"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000003381,
+    "give_money": 6720,
+    "receive_money": -10980,
+    "rang_money": -4260,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "土城阿謙"
+  },
+  {
+    "from": 10000015616,
+    "to": 10000000025,
+    "give_money": 97600,
+    "receive_money": -102000,
+    "rang_money": -4400,
+    "from_nickname": "滷肉飯",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000030,
+    "to": 10000000775,
+    "give_money": 5400,
+    "receive_money": -9882,
+    "rang_money": -4482,
+    "from_nickname": "鴻金寶財庫",
+    "to_nickname": "敢不敢給一句話"
+  },
+  {
+    "from": 10000000030,
+    "to": 10000022132,
+    "give_money": 7200,
+    "receive_money": -12200,
+    "rang_money": -5000,
+    "from_nickname": "鴻金寶財庫",
+    "to_nickname": "贏麻了22134"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000002046,
+    "give_money": 4560,
+    "receive_money": -10004,
+    "rang_money": -5444,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "YUDA"
+  },
+  {
+    "from": 10000017377,
+    "to": 10000000025,
+    "give_money": 1220,
+    "receive_money": -6722,
+    "rang_money": -5502,
+    "from_nickname": "贏麻了17379",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000018135,
+    "give_money": 2880,
+    "receive_money": -8540,
+    "rang_money": -5660,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "凡皓"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000018909,
+    "give_money": 6000,
+    "receive_money": -11834,
+    "rang_money": -5834,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "Hsu6666"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000018857,
+    "give_money": 2016,
+    "receive_money": -7930,
+    "rang_money": -5914,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "Gao Jun"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000000333,
+    "give_money": 4800,
+    "receive_money": -10980,
+    "rang_money": -6180,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "李小黃"
+  },
+  {
+    "from": 10000008534,
+    "to": 10000019284,
+    "give_money": 13000,
+    "receive_money": -19500,
+    "rang_money": -6500,
+    "from_nickname": "燒鳩龍哥",
+    "to_nickname": "舜子哥"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000015909,
+    "give_money": 4920,
+    "receive_money": -11956,
+    "rang_money": -7036,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "坤坤"
+  },
+  {
+    "from": 10000000030,
+    "to": 10000008534,
+    "give_money": 4800,
+    "receive_money": -12200,
+    "rang_money": -7400,
+    "from_nickname": "鴻金寶財庫",
+    "to_nickname": "燒鳩龍哥"
+  },
+  {
+    "from": 10000000030,
+    "to": 10000022699,
+    "give_money": 1440,
+    "receive_money": -9150,
+    "rang_money": -7710,
+    "from_nickname": "鴻金寶財庫",
+    "to_nickname": "想咋啲"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000020591,
+    "give_money": 4320,
+    "receive_money": -12810,
+    "rang_money": -8490,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "亻韋"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000000247,
+    "give_money": 6360,
+    "receive_money": -14884,
+    "rang_money": -8524,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "大尾三井壽金庫"
+  },
+  {
+    "from": 10000022339,
+    "to": 10000022616,
+    "give_money": 1350,
+    "receive_money": -10000,
+    "rang_money": -8650,
+    "from_nickname": "領到手抽筋",
+    "to_nickname": "outlook卡"
+  },
+  {
+    "from": 10000015223,
+    "to": 10000000025,
+    "give_money": 13420,
+    "receive_money": -22080,
+    "rang_money": -8660,
+    "from_nickname": "開心很多紅",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000023364,
+    "give_money": 4440,
+    "receive_money": -13420,
+    "rang_money": -8980,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "葉誌"
+  },
+  {
+    "from": 10000000030,
+    "to": 10000019284,
+    "give_money": 6480,
+    "receive_money": -17080,
+    "rang_money": -10600,
+    "from_nickname": "鴻金寶財庫",
+    "to_nickname": "舜子哥"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000012422,
+    "give_money": 4152,
+    "receive_money": -15006,
+    "rang_money": -10854,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "豪志"
+  },
+  {
+    "from": 10000021007,
+    "to": 10000000025,
+    "give_money": 37820,
+    "receive_money": -48720,
+    "rang_money": -10900,
+    "from_nickname": "熱帶風暴",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000020961,
+    "to": 10000000025,
+    "give_money": 11590,
+    "receive_money": -25920,
+    "rang_money": -14330,
+    "from_nickname": "淶財",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000013844,
+    "give_money": 7200,
+    "receive_money": -21838,
+    "rang_money": -14638,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "Gaga"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000003166,
+    "give_money": 1200,
+    "receive_money": -15860,
+    "rang_money": -14660,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "隆隆"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000022339,
+    "give_money": 7440,
+    "receive_money": -22570,
+    "rang_money": -15130,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "領到手抽筋"
+  },
+  {
+    "from": 10000022167,
+    "to": 10000019284,
+    "give_money": 1000,
+    "receive_money": -16200,
+    "rang_money": -15200,
+    "from_nickname": "我覺得自己很厲害",
+    "to_nickname": "舜子哥"
+  },
+  {
+    "from": 10000023208,
+    "to": 10000000025,
+    "give_money": 36600,
+    "receive_money": -52200,
+    "rang_money": -15600,
+    "from_nickname": "中聯阿鑫",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000003153,
+    "give_money": 3600,
+    "receive_money": -19520,
+    "rang_money": -15920,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "閃亮大禿頭"
+  },
+  {
+    "from": 10000000030,
+    "to": 10000000235,
+    "give_money": 7080,
+    "receive_money": -24400,
+    "rang_money": -17320,
+    "from_nickname": "鴻金寶財庫",
+    "to_nickname": "子揚"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000013843,
+    "give_money": 9000,
+    "receive_money": -27450,
+    "rang_money": -18450,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "妮欸"
+  },
+  {
+    "from": 10000019958,
+    "to": 10000000025,
+    "give_money": 7808,
+    "receive_money": -27168,
+    "rang_money": -19360,
+    "from_nickname": "BinGKinG01",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000007585,
+    "give_money": 9840,
+    "receive_money": -29890,
+    "rang_money": -20050,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "張哲"
+  },
+  {
+    "from": 10000000030,
+    "to": 10000010162,
+    "give_money": 53640,
+    "receive_money": -76250,
+    "rang_money": -22610,
+    "from_nickname": "鴻金寶財庫",
+    "to_nickname": "娛樂城首選贏麻了"
+  },
+  {
+    "from": 10000000030,
+    "to": 10000012480,
+    "give_money": 17400,
+    "receive_money": -40260,
+    "rang_money": -22860,
+    "from_nickname": "鴻金寶財庫",
+    "to_nickname": "楊秉霖"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000005835,
+    "give_money": 36000,
+    "receive_money": -61000,
+    "rang_money": -25000,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "松鼠"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000004030,
+    "give_money": 17400,
+    "receive_money": -42700,
+    "rang_money": -25300,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "真假贏麻了0825"
+  },
+  {
+    "from": 10000022354,
+    "to": 10000000025,
+    "give_money": 46970,
+    "receive_money": -77400,
+    "rang_money": -30430,
+    "from_nickname": "森林小熊熊",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000012480,
+    "to": 10000019284,
+    "give_money": 29700,
+    "receive_money": -60300,
+    "rang_money": -30600,
+    "from_nickname": "楊秉霖",
+    "to_nickname": "舜子哥"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000000896,
+    "give_money": 134028,
+    "receive_money": -164700,
+    "rang_money": -30672,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "贏麻了892"
+  },
+  {
+    "from": 10000000030,
+    "to": 10000001216,
+    "give_money": 15120,
+    "receive_money": -45994,
+    "rang_money": -30874,
+    "from_nickname": "鴻金寶財庫",
+    "to_nickname": "阿泓"
+  },
+  {
+    "from": 10000003183,
+    "to": 10000000025,
+    "give_money": 30012,
+    "receive_money": -61800,
+    "rang_money": -31788,
+    "from_nickname": "維霖",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000011281,
+    "give_money": 19200,
+    "receive_money": -61000,
+    "rang_money": -41800,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "贏麻了11283"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000004555,
+    "give_money": 67560,
+    "receive_money": -111386,
+    "rang_money": -43826,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "唐三藏"
+  },
+  {
+    "from": 10000000030,
+    "to": 10000019365,
+    "give_money": 30000,
+    "receive_money": -74786,
+    "rang_money": -44786,
+    "from_nickname": "鴻金寶財庫",
+    "to_nickname": "Han Sheng"
+  },
+  {
+    "from": 10000000129,
+    "to": 10000000025,
+    "give_money": 235948,
+    "receive_money": -281952,
+    "rang_money": -46004,
+    "from_nickname": "福祿壽",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000001466,
+    "give_money": 25560,
+    "receive_money": -77836,
+    "rang_money": -52276,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "Aurora"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000011491,
+    "give_money": 52440,
+    "receive_money": -122732,
+    "rang_money": -70292,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "漢頓"
+  },
+  {
+    "from": 10000017816,
+    "to": 10000000025,
+    "give_money": 23180,
+    "receive_money": -93600,
+    "rang_money": -70420,
+    "from_nickname": "破擊敗特",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000016092,
+    "give_money": 35280,
+    "receive_money": -109434,
+    "rang_money": -74154,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "少峻"
+  },
+  {
+    "from": 10000008571,
+    "to": 10000000025,
+    "give_money": 61854,
+    "receive_money": -165360,
+    "rang_money": -103506,
+    "from_nickname": "NNhui",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000019196,
+    "to": 10000000025,
+    "give_money": 49410,
+    "receive_money": -155760,
+    "rang_money": -106350,
+    "from_nickname": "贏麻了0327",
+    "to_nickname": "發財豬金庫"
+  },
+  {
+    "from": 10000000030,
+    "to": 10000021356,
+    "give_money": 111024,
+    "receive_money": -275964,
+    "rang_money": -164940,
+    "from_nickname": "鴻金寶財庫",
+    "to_nickname": "贏麻了21358"
+  },
+  {
+    "from": 10000000025,
+    "to": 10000001055,
+    "give_money": 154464,
+    "receive_money": -323910,
+    "rang_money": -169446,
+    "from_nickname": "發財豬金庫",
+    "to_nickname": "皮皮蝦跟我走"
+  }
+]

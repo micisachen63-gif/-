@@ -1,0 +1,29 @@
+{
+  "name": "bigwin-monitor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "login": "node src/index.js login",
+    "run-once": "node src/index.js run-once",
+    "dry": "node src/index.js run-once --dry",
+    "service": "node src/index.js service",
+    "status": "node src/index.js status",
+    "test": "node --test test/*.test.js",
+    "deploy": "npx hugo && wrangler deploy",
+    "preview": "npx hugo && wrangler dev"
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "gifenc": "^1.0.3",
+    "jpeg-js": "^0.4.4",
+    "playwright-core": "^1.63.0",
+    "pngjs": "^7.0.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.149.0"
+  }
+}

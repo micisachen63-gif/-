@@ -1,0 +1,506 @@
+{
+  "brand": {
+    "key": "song",
+    "name": "爽爆"
+  },
+  "month": {
+    "key": "2026-08",
+    "m": 8,
+    "y": 2026,
+    "label": "8月",
+    "start": "2026-08-01",
+    "end": "2026-08-30",
+    "full": false,
+    "range": "8/1-8/30"
+  },
+  "prev": {
+    "key": "2026-07",
+    "m": 7,
+    "y": 2026,
+    "label": "7月",
+    "start": "2026-07-01",
+    "end": "2026-07-31",
+    "range": "7/1-7/31"
+  },
+  "kpi": {
+    "dau": {
+      "prev": 1137,
+      "cur": 1018,
+      "pct": -0.10466138962181179
+    },
+    "nu": {
+      "prev": 31,
+      "cur": 23,
+      "pct": -0.25806451612903225
+    },
+    "revenue": {
+      "prev": 1666640,
+      "cur": 1409550,
+      "pct": -0.15425646810348967
+    },
+    "arppu": {
+      "prev": 753,
+      "cur": 796,
+      "pct": 0.057104913678618856
+    },
+    "firstDeposit": {
+      "prev": 30550,
+      "cur": 28500,
+      "pct": -0.06710310965630115
+    }
+  },
+  "tiers": {
+    "list": [
+      {
+        "key": "high",
+        "label": "高貢獻用戶",
+        "range": "3萬以上",
+        "prev": {
+          "users": 7,
+          "amount": 345680,
+          "share": 0.2074113185810973
+        },
+        "cur": {
+          "users": 4,
+          "amount": 323170,
+          "share": 0.22927175339647404
+        }
+      },
+      {
+        "key": "mid",
+        "label": "中貢獻用戶",
+        "range": "1-3萬",
+        "prev": {
+          "users": 36,
+          "amount": 521570,
+          "share": 0.31294700715211443
+        },
+        "cur": {
+          "users": 24,
+          "amount": 360220,
+          "share": 0.2555567379660175
+        }
+      },
+      {
+        "key": "low",
+        "label": "低貢獻用戶",
+        "range": "1萬以下",
+        "prev": {
+          "users": 656,
+          "amount": 799390,
+          "share": 0.4796416742667883
+        },
+        "cur": {
+          "users": 567,
+          "amount": 726160,
+          "share": 0.5151715086375084
+        }
+      }
+    ],
+    "total": {
+      "prev": {
+        "users": 699,
+        "amount": 1666640
+      },
+      "cur": {
+        "users": 595,
+        "amount": 1409550
+      },
+      "pct": -0.14878397711015737,
+      "amountPct": -0.15425646810348967
+    }
+  },
+  "machines": {
+    "prev": [
+      {
+        "rank": 1,
+        "gameId": 721,
+        "vendorId": 28,
+        "game": "蔬菜富礦",
+        "vendor": "AMS電子",
+        "players": 61,
+        "betCount": 2823,
+        "bet": 910746330,
+        "validBet": 910746330,
+        "pay": 841376919.5,
+        "netIncome": 69369410.5,
+        "rtp": 92.38323469280408,
+        "vendors": [
+          "AMS電子"
+        ],
+        "main": 910746330
+      },
+      {
+        "rank": 2,
+        "gameId": 576,
+        "vendorId": 9,
+        "game": "戰神賽特2 覺醒之力",
+        "vendor": "atg",
+        "players": 2059,
+        "betCount": 2196762,
+        "bet": 865603422,
+        "validBet": 865603422,
+        "pay": 863828320.12,
+        "netIncome": 1775101.88,
+        "rtp": 99.79492896690513,
+        "vendors": [
+          "atg"
+        ],
+        "main": 865603422
+      },
+      {
+        "rank": 3,
+        "gameId": 685,
+        "vendorId": 32,
+        "game": "月兔",
+        "vendor": "QT2電子 等 2 個版本",
+        "players": 248,
+        "betCount": 45493,
+        "bet": 596032770,
+        "validBet": 596032770,
+        "pay": 555506604.2,
+        "netIncome": 40526165.8,
+        "rtp": 93.20068160010733,
+        "vendors": [
+          "QT電子",
+          "QT2電子"
+        ],
+        "main": 554257725
+      },
+      {
+        "rank": 4,
+        "gameId": 159,
+        "vendorId": 9,
+        "game": "戰神賽特",
+        "vendor": "atg 等 3 個版本",
+        "players": 883,
+        "betCount": 742481,
+        "bet": 386892554.8,
+        "validBet": 386892554.8,
+        "pay": 375247266.13,
+        "netIncome": 11645288.67,
+        "rtp": 96.99004580844934,
+        "vendors": [
+          "gr",
+          "atg",
+          "RG"
+        ],
+        "main": 375043975
+      },
+      {
+        "rank": 5,
+        "gameId": 763,
+        "vendorId": 9,
+        "game": "虎小妹",
+        "vendor": "atg",
+        "players": 1640,
+        "betCount": 864750,
+        "bet": 361626651,
+        "validBet": 361626651,
+        "pay": 322330128.29,
+        "netIncome": 39296522.71,
+        "rtp": 89.13339970897223,
+        "vendors": [
+          "atg"
+        ],
+        "main": 361626651
+      }
+    ],
+    "cur": [
+      {
+        "rank": 1,
+        "gameId": 576,
+        "vendorId": 9,
+        "game": "戰神賽特2 覺醒之力",
+        "vendor": "atg",
+        "players": 1785,
+        "betCount": 2147990,
+        "bet": 1133406154,
+        "validBet": 1133406154,
+        "pay": 1126582669.99,
+        "netIncome": 6823484.01,
+        "rtp": 99.39796656424366,
+        "vendors": [
+          "atg"
+        ],
+        "main": 1133406154
+      },
+      {
+        "rank": 2,
+        "gameId": 685,
+        "vendorId": 32,
+        "game": "月兔",
+        "vendor": "QT2電子",
+        "players": 217,
+        "betCount": 37674,
+        "bet": 506408125,
+        "validBet": 506408325,
+        "pay": 464647213,
+        "netIncome": 41760912,
+        "rtp": 91.75350671950613,
+        "vendors": [
+          "QT2電子"
+        ],
+        "main": 506408325
+      },
+      {
+        "rank": 3,
+        "gameId": 54,
+        "vendorId": 3,
+        "game": "瘋狂淘金樂-集鴻運",
+        "vendor": "Booongo",
+        "players": 4,
+        "betCount": 84126,
+        "bet": 476420156,
+        "validBet": 476420156,
+        "pay": 467681272,
+        "netIncome": 8738884,
+        "rtp": 98.16571908431179,
+        "vendors": [
+          "Booongo"
+        ],
+        "main": 476420156
+      },
+      {
+        "rank": 4,
+        "gameId": 159,
+        "vendorId": 9,
+        "game": "戰神賽特",
+        "vendor": "atg 等 3 個版本",
+        "players": 771,
+        "betCount": 537023,
+        "bet": 332293496,
+        "validBet": 332293496,
+        "pay": 330410689.22,
+        "netIncome": 1882806.78,
+        "rtp": 99.43339042061781,
+        "vendors": [
+          "gr",
+          "atg",
+          "RG"
+        ],
+        "main": 206014095
+      },
+      {
+        "rank": 5,
+        "gameId": 779,
+        "vendorId": 3,
+        "game": "幸運幣大亨: 集運金",
+        "vendor": "Booongo",
+        "players": 767,
+        "betCount": 252133,
+        "bet": 216471069,
+        "validBet": 216471069,
+        "pay": 228852057.1,
+        "netIncome": -12380988.1,
+        "rtp": 105.71946549587187,
+        "vendors": [
+          "Booongo"
+        ],
+        "main": 216471069
+      }
+    ]
+  },
+  "rtp": {
+    "prev": [
+      {
+        "rank": 1,
+        "gameId": 705,
+        "vendorId": 2,
+        "game": "賞金獵人",
+        "vendor": "RSG",
+        "players": 468,
+        "betCount": 122420,
+        "bet": 146746220,
+        "validBet": 146746220,
+        "pay": 226846343,
+        "netIncome": -80100123,
+        "rtp": 154.58,
+        "loss": 80100123
+      },
+      {
+        "rank": 2,
+        "gameId": 766,
+        "vendorId": 27,
+        "game": "至高宙斯",
+        "vendor": "SLOTMILL電子",
+        "players": 41,
+        "betCount": 2648,
+        "bet": 26661375,
+        "validBet": 26661375,
+        "pay": 44132335,
+        "netIncome": -17470960,
+        "rtp": 165.53,
+        "loss": 17470960
+      },
+      {
+        "rank": 3,
+        "gameId": 747,
+        "vendorId": 27,
+        "game": "福爾圖娜的崛起",
+        "vendor": "SLOTMILL電子",
+        "players": 17,
+        "betCount": 416,
+        "bet": 18721300,
+        "validBet": 18721300,
+        "pay": 26913347.5,
+        "netIncome": -8192047.5,
+        "rtp": 143.76,
+        "loss": 8192047.5
+      },
+      {
+        "rank": 4,
+        "gameId": 701,
+        "vendorId": 2,
+        "game": "侏羅紀寶藏",
+        "vendor": "RSG",
+        "players": 35,
+        "betCount": 9859,
+        "bet": 33262640,
+        "validBet": 33262640,
+        "pay": 38703010,
+        "netIncome": -5440370,
+        "rtp": 116.36,
+        "loss": 5440370
+      },
+      {
+        "rank": 5,
+        "gameId": 438,
+        "vendorId": 21,
+        "game": "腰纏萬貫",
+        "vendor": "AFB",
+        "players": 13,
+        "betCount": 9344,
+        "bet": 44119700,
+        "validBet": 44119700,
+        "pay": 47516555,
+        "netIncome": -3396855,
+        "rtp": 107.7,
+        "loss": 3396855
+      }
+    ],
+    "cur": [
+      {
+        "rank": 1,
+        "gameId": 683,
+        "vendorId": 32,
+        "game": "腫脹",
+        "vendor": "QT2電子",
+        "players": 37,
+        "betCount": 28668,
+        "bet": 116693250,
+        "validBet": 116693250,
+        "pay": 130516000,
+        "netIncome": -13822750,
+        "rtp": 111.85,
+        "loss": 13822750
+      },
+      {
+        "rank": 2,
+        "gameId": 779,
+        "vendorId": 3,
+        "game": "幸運幣大亨: 集運金",
+        "vendor": "Booongo",
+        "players": 767,
+        "betCount": 252133,
+        "bet": 216471069,
+        "validBet": 216471069,
+        "pay": 228852057.1,
+        "netIncome": -12380988.1,
+        "rtp": 105.72,
+        "loss": 12380988.1
+      },
+      {
+        "rank": 3,
+        "gameId": 66,
+        "vendorId": 3,
+        "game": "驚天大盜",
+        "vendor": "Booongo",
+        "players": 26,
+        "betCount": 7685,
+        "bet": 8605501,
+        "validBet": 8605501,
+        "pay": 16905613.5,
+        "netIncome": -8300112.5,
+        "rtp": 196.45,
+        "loss": 8300112.5
+      },
+      {
+        "rank": 4,
+        "gameId": 283,
+        "vendorId": 3,
+        "game": "幸運幣大亨",
+        "vendor": "Booongo",
+        "players": 100,
+        "betCount": 27879,
+        "bet": 69933917,
+        "validBet": 69933917,
+        "pay": 77676227.1,
+        "netIncome": -7742310.1,
+        "rtp": 111.07,
+        "loss": 7742310.1
+      },
+      {
+        "rank": 5,
+        "gameId": 348,
+        "vendorId": 2,
+        "game": "有請財神",
+        "vendor": "RSG",
+        "players": 304,
+        "betCount": 95100,
+        "bet": 148591460,
+        "validBet": 148591460,
+        "pay": 156099519,
+        "netIncome": -7508059,
+        "rtp": 105.05,
+        "loss": 7508059
+      }
+    ],
+    "top5": {
+      "prev": 114600355.5,
+      "cur": 49754219.7,
+      "pct": -0.5658458520226841
+    },
+    "allLoss": {
+      "prev": 157945294.76000002,
+      "cur": 84428201.74
+    },
+    "concentration": {
+      "prev": 0.7255699239039489,
+      "cur": 0.5893080590916777
+    }
+  },
+  "sources": {
+    "sheet": "https://docs.google.com/spreadsheets/d/1B72qrFdO759Lfw8iSKiJMYYJlMfgM9ks",
+    "tabs": {
+      "deposit": "爽爆儲值",
+      "retention": "爽爆留存"
+    },
+    "api": [
+      "platformSTMT/purchaseRank",
+      "gameSTMT/vendorGameSTMT"
+    ],
+    "rows": {
+      "purchaseRank": {
+        "prev": 699,
+        "cur": 595
+      },
+      "machineOverview": {
+        "prev": 447,
+        "cur": 453
+      }
+    },
+    "checks": {
+      "purchaseRankVsSheetRevenue": {
+        "prev": [
+          1666640,
+          1666640
+        ],
+        "cur": [
+          1409550,
+          1409550
+        ]
+      }
+    }
+  }
+}

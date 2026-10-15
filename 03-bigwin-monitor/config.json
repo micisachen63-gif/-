@@ -1,0 +1,136 @@
+{
+  "intervalMinutes": 5,
+  "serviceSplit": { "enabled": true },
+  "overlapMinutes": 30,
+  "firstRunMinutes": 10,
+  "maxCatchupMinutes": 180,
+  "chunkMinutes": 60,
+  "pageLimit": 5000,
+  "maxPages": 100,
+  "requestTimeoutSec": 150,
+  "brandCycleHardLimitMinutes": 20,
+  "browserRecycleHours": 12,
+  "seenRetentionHours": 48,
+  "loginFailuresBeforeAlert": 2,
+  "loginAlertCooldownHours": 4,
+  "scanFailuresBeforeAlert": 6,
+  "scanFailureAlertCooldownHours": 6,
+  "backendCredentials": {
+    "enabled": true,
+    "script": "C:\\Users\\User\\Documents\\Codex\\2026-09-18\\new-chat\\outputs\\operations-program\\backend-credentials.ps1"
+  },
+  "cashout": {
+    "enabled": true,
+    "pageLimit": 5000,
+    "maxPages": 20,
+    "winMark": "🟢▲",
+    "lossMark": "🔴▼",
+    "evenMark": "⚪"
+  },
+  "brands": [
+    {
+      "key": "winmalo",
+      "name": "贏麻",
+      "uiBase": "https://admin.winmalo.com:9955",
+      "apiBase": "https://admin.winmalo.com:9032",
+      "threshold": 10000,
+      "community": {
+        "envFile": "C:\\Users\\User\\Documents\\ChatGPT\\營運自動化\\.env",
+        "buttonText": "馬上搶台試手氣",
+        "buttonUrl": "https://liff.line.me/2008678737-mZTxDgVt"
+      },
+      "cashout": {
+        "dealers": [
+          "發財豬金庫",
+          "鴻金寶財庫"
+        ],
+        "twdRate": 1.21
+      }
+    },
+    {
+      "key": "songyy",
+      "name": "爽爆",
+      "uiBase": "https://admin.song-yy.com:9955",
+      "apiBase": "https://admin.song-yy.com:9032",
+      "threshold": 900000,
+      "community": {
+        "envFile": "C:\\Users\\User\\Documents\\ChatGPT\\03-機台與風控\\爽爆機台狙擊手\\.env",
+        "buttonText": "點我過上富豪人生",
+        "buttonUrl": "https://liff.line.me/2000222941-8ORVa7oZ"
+      },
+      "cashout": {
+        "dealers": [
+          "星星金控",
+          "旺旺金庫",
+          "大巨人金控"
+        ],
+        "twdRate": 138
+      }
+    },
+    {
+      "key": "qiezi",
+      "name": "茄子",
+      "uiBase": "https://admin.qzplays.com:9955",
+      "apiBase": "https://admin.qzplays.com:9032",
+      "threshold": 900000,
+      "community": {
+        "envFile": "C:\\Users\\User\\Documents\\ChatGPT\\03-機台與風控\\茄子機台狙擊手\\.env",
+        "buttonText": "前往茄子試手氣",
+        "buttonUrl": "https://liff.line.me/2004182953-ZKaD27vq"
+      },
+      "cashout": {
+        "dealers": [
+          "星星金控",
+          "大富發金庫"
+        ],
+        "twdRate": 138
+      }
+    }
+  ],
+  "relay": {
+    "ownerId": 489706404,
+    "throttleSeconds": 15,
+    "timeoutSeconds": 15
+  },
+  "chatgptWeb": {
+    "enabled": true,
+    "endpoint": "http://127.0.0.1:19386",
+    "timeoutSeconds": 180,
+    "background": true,
+    "projectUrl": "https://chatgpt.com/g/g-p-6abb4ed47e708191b453f006d9e18ab5",
+    "executablePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "profileDir": ".auth/chatgpt-chrome"
+  },
+  "localMaintenance": {
+    "enabled": true,
+    "timeoutSeconds": 300,
+    "maxSteps": 60
+  },
+  "fullAccess": {
+    "enabled": true,
+    "allowedUsername": "micasachen",
+    "allowedUserId": 489706404,
+    "maxSteps": 60,
+    "timeoutSeconds": 300
+  },
+  "grokVideo": {
+    "enabled": true,
+    "endpoint": "http://127.0.0.1:19386",
+    "resolution": "720p",
+    "duration": "6s",
+    "timeoutSeconds": 600
+  },
+  "hiphop": {
+    "enabled": true,
+    "timeZone": "Asia/Taipei",
+    "dailyTime": "13:30"
+  },
+  "telegram": {
+    "alertConfigFile": "C:\\Users\\User\\Documents\\Codex\\2026-09-21\\new-chat\\daily_gift\\telegram.local.json"
+  },
+  "chrome": {
+    "executablePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "profileDir": ".auth/chrome"
+  },
+  "grokBuild": { "enabled": true, "maxTurns": 40, "timeoutSeconds": 1200 }
+}

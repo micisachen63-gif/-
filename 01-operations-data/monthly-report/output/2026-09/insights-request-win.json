@@ -1,0 +1,1092 @@
+{
+  "說明": "把 facts 交給 AI，請它依 schema 回傳 JSON，存成同資料夾的 insights-win.json，再重跑 build。",
+  "schema": {
+    "summary": {
+      "insight": "核心洞察（2-3 句）"
+    },
+    "channel": {
+      "insight": "渠道核心洞察（2 句）"
+    },
+    "activity": {
+      "dau": "DAU 解讀（1-2 句）",
+      "arppu": "ARPPU 解讀（1-2 句）"
+    },
+    "winners": {
+      "analysis": "贏錢排行核心分析（3-4 點）",
+      "observe": "觀察（1 句）"
+    },
+    "bleed": {
+      "insight": "失血來源核心分析（2-3 句）",
+      "watch": "觀察（1 句）",
+      "focus": "重點（1 句）"
+    },
+    "vip": {
+      "notes": "VIP 儲值動能觀察（2-3 句）"
+    },
+    "vipInsight": {
+      "head": "頭部效應（1-2 句）",
+      "core": "核心大戶留存（1-2 句）"
+    },
+    "payers": {
+      "headline": "標題第二行（12 字內）",
+      "conclusion": "結論（1-2 句）",
+      "cause": "主因（短句）",
+      "cause2": "次因（短句）",
+      "focus": "營運重點（短句）"
+    },
+    "vipDrive": {
+      "headline": "標題後半（8 字內）",
+      "conclusion": "核心結論（1-2 句）",
+      "cause": "主因（短句）",
+      "watch": "觀察（短句）",
+      "focus": "重點（短句）"
+    },
+    "bets": {
+      "text": "投注量 Top5 解讀（2 句）"
+    },
+    "rtp": {
+      "text": "RTP 失分解讀（2 句）"
+    },
+    "machineInsight": {
+      "aTitle": "洞察一標題",
+      "a": "洞察一（2 句）",
+      "bTitle": "洞察二標題",
+      "b": "洞察二（2 句）"
+    },
+    "strategy": {
+      "title": "戰略收斂標題（10 字內）",
+      "cards": [
+        {
+          "title": "策略標題",
+          "text": "做法（1-2 句）"
+        }
+      ]
+    }
+  },
+  "facts": {
+    "brand": {
+      "key": "win",
+      "name": "贏麻了"
+    },
+    "month": {
+      "key": "2026-09",
+      "m": 9,
+      "y": 2026,
+      "label": "9月",
+      "start": "2026-09-01",
+      "end": "2026-09-30",
+      "full": true,
+      "range": "9/1-9/30"
+    },
+    "prev": {
+      "key": "2026-08",
+      "m": 8,
+      "y": 2026,
+      "label": "8月",
+      "start": "2026-08-01",
+      "end": "2026-08-31",
+      "range": "8/1-8/31"
+    },
+    "quarter": "Y26-Q3",
+    "kpi": {
+      "dau": {
+        "prev": 691,
+        "cur": 501,
+        "pct": -0.27496382054992763
+      },
+      "nu": {
+        "prev": 44,
+        "cur": 29,
+        "pct": -0.3409090909090909
+      },
+      "revenue": {
+        "prev": 1726800,
+        "cur": 1499500,
+        "pct": -0.13163076210331248
+      },
+      "arppu": {
+        "prev": 1512,
+        "cur": 1601,
+        "pct": 0.05886243386243386
+      },
+      "firstDeposit": {
+        "prev": 60200,
+        "cur": 40000,
+        "pct": -0.33554817275747506
+      }
+    },
+    "nu": {
+      "prev": 44.32258064516129,
+      "cur": 28.966666666666665
+    },
+    "nuSum": {
+      "prev": 1374,
+      "cur": 869
+    },
+    "dailyRevenue": {
+      "prev": 55703.22580645161,
+      "cur": 49983.333333333336,
+      "pct": -0.10268512084008953
+    },
+    "bet": {
+      "prev": 62540861.75,
+      "cur": 61621862.63000001,
+      "pct": -0.014694378911400111
+    },
+    "dauDaily": {
+      "prev": [
+        767,
+        770,
+        757,
+        744,
+        684,
+        740,
+        726,
+        737,
+        750,
+        726,
+        687,
+        684,
+        676,
+        687,
+        738,
+        710,
+        689,
+        670,
+        642,
+        657,
+        663,
+        659,
+        684,
+        680,
+        656,
+        650,
+        613,
+        625,
+        629,
+        670,
+        667
+      ],
+      "cur": [
+        672,
+        636,
+        605,
+        615,
+        627,
+        593,
+        547,
+        512,
+        552,
+        526,
+        518,
+        526,
+        530,
+        500,
+        488,
+        494,
+        442,
+        446,
+        483,
+        491,
+        456,
+        460,
+        413,
+        421,
+        476,
+        434,
+        406,
+        380,
+        358,
+        429
+      ]
+    },
+    "channel": {
+      "prev": {
+        "month": 8,
+        "channels": [
+          {
+            "name": "Efun_Facebook",
+            "reg": 1,
+            "invalid": 0,
+            "invalidRate": 0,
+            "payers": 0,
+            "conv": 0,
+            "amount": 0
+          },
+          {
+            "name": "無框印象meta",
+            "reg": 253,
+            "invalid": 92,
+            "invalidRate": 0.3636363636,
+            "payers": 4,
+            "conv": 0.01581027668,
+            "amount": 5400
+          },
+          {
+            "name": "無來源(推薦好友)",
+            "reg": 393,
+            "invalid": 95,
+            "invalidRate": 0.2417302799,
+            "payers": 45,
+            "conv": 0.1145038168,
+            "amount": 112900
+          },
+          {
+            "name": "遊戲人生543",
+            "reg": 15,
+            "invalid": 4,
+            "invalidRate": 0.2666666667,
+            "payers": 2,
+            "conv": 0.1333333333,
+            "amount": 2600
+          },
+          {
+            "name": "mercury_google",
+            "reg": 566,
+            "invalid": 263,
+            "invalidRate": 0.464664311,
+            "payers": 19,
+            "conv": 0.03356890459,
+            "amount": 41500
+          },
+          {
+            "name": "Efun_Tiktok",
+            "reg": 75,
+            "invalid": 33,
+            "invalidRate": 0.44,
+            "payers": 1,
+            "conv": 0.01333333333,
+            "amount": 800
+          },
+          {
+            "name": "臉書粉專",
+            "reg": 0,
+            "invalid": 0,
+            "invalidRate": 0,
+            "payers": 0,
+            "conv": 0,
+            "amount": 0
+          },
+          {
+            "name": "efun_taboola",
+            "reg": 71,
+            "invalid": 36,
+            "invalidRate": 0.5070422535,
+            "payers": 1,
+            "conv": 0.01408450704,
+            "amount": 1000
+          }
+        ],
+        "total": {
+          "reg": 1374,
+          "invalid": 523,
+          "invalidRate": 0.3806404658,
+          "payers": 72,
+          "conv": 0.05240174672,
+          "amount": 164200
+        }
+      },
+      "cur": {
+        "month": 9,
+        "channels": [
+          {
+            "name": "無框印象meta",
+            "reg": 103,
+            "invalid": 42,
+            "invalidRate": 0.4077669903,
+            "payers": 2,
+            "conv": 0.01941747573,
+            "amount": 1300
+          },
+          {
+            "name": "無來源(推薦好友)",
+            "reg": 325,
+            "invalid": 84,
+            "invalidRate": 0.2584615385,
+            "payers": 38,
+            "conv": 0.1169230769,
+            "amount": 47900
+          },
+          {
+            "name": "遊戲人生543",
+            "reg": 35,
+            "invalid": 14,
+            "invalidRate": 0.4,
+            "payers": 4,
+            "conv": 0.1142857143,
+            "amount": 2600
+          },
+          {
+            "name": "mercury_google",
+            "reg": 329,
+            "invalid": 164,
+            "invalidRate": 0.4984802432,
+            "payers": 6,
+            "conv": 0.01823708207,
+            "amount": 6400
+          },
+          {
+            "name": "Efun_Tiktok",
+            "reg": 75,
+            "invalid": 44,
+            "invalidRate": 0.5866666667,
+            "payers": 0,
+            "conv": 0,
+            "amount": 0
+          },
+          {
+            "name": "臉書粉專",
+            "reg": 2,
+            "invalid": 1,
+            "invalidRate": 0.5,
+            "payers": 0,
+            "conv": 0,
+            "amount": 0
+          }
+        ],
+        "total": {
+          "reg": 869,
+          "invalid": 349,
+          "invalidRate": 0.4016110472,
+          "payers": 50,
+          "conv": 0.05753739931,
+          "amount": 58200
+        }
+      },
+      "cards": [
+        {
+          "name": "無來源(推薦好友)",
+          "reg": 325,
+          "invalid": 84,
+          "invalidRate": 0.2584615385,
+          "payers": 38,
+          "conv": 0.1169230769,
+          "amount": 47900
+        },
+        {
+          "name": "mercury_google",
+          "reg": 329,
+          "invalid": 164,
+          "invalidRate": 0.4984802432,
+          "payers": 6,
+          "conv": 0.01823708207,
+          "amount": 6400
+        },
+        {
+          "name": "遊戲人生543",
+          "reg": 35,
+          "invalid": 14,
+          "invalidRate": 0.4,
+          "payers": 4,
+          "conv": 0.1142857143,
+          "amount": 2600
+        },
+        {
+          "name": "無框印象meta",
+          "reg": 103,
+          "invalid": 42,
+          "invalidRate": 0.4077669903,
+          "payers": 2,
+          "conv": 0.01941747573,
+          "amount": 1300
+        }
+      ],
+      "low": [
+        {
+          "name": "Efun_Tiktok",
+          "reg": 75,
+          "invalid": 44,
+          "invalidRate": 0.5866666667,
+          "payers": 0,
+          "conv": 0,
+          "amount": 0
+        },
+        {
+          "name": "臉書粉專",
+          "reg": 2,
+          "invalid": 1,
+          "invalidRate": 0.5,
+          "payers": 0,
+          "conv": 0,
+          "amount": 0
+        }
+      ],
+      "warn": ""
+    },
+    "winners": {
+      "players": 66,
+      "total": -483040.00000000023,
+      "top": [
+        {
+          "rank": 1,
+          "aid": "10000001055",
+          "nick": "皮皮蝦跟我走",
+          "rang": 169446,
+          "purchase": 42000,
+          "hist": 71100,
+          "net": 99205
+        },
+        {
+          "rank": 2,
+          "aid": "10000021356",
+          "nick": "贏麻了21358",
+          "rang": 164940,
+          "purchase": 41500,
+          "hist": 49300,
+          "net": 95950
+        },
+        {
+          "rank": 3,
+          "aid": "10000001466",
+          "nick": "Aurora",
+          "rang": 52276,
+          "purchase": 1500,
+          "hist": 10400,
+          "net": 42063.333333333336
+        },
+        {
+          "rank": 4,
+          "aid": "10000000896",
+          "nick": "贏麻了892",
+          "rang": 30672,
+          "purchase": 0,
+          "hist": 38800,
+          "net": 25560
+        },
+        {
+          "rank": 5,
+          "aid": "10000005835",
+          "nick": "松鼠",
+          "rang": 25000,
+          "purchase": 0,
+          "hist": 25800,
+          "net": 20833.333333333336
+        },
+        {
+          "rank": 6,
+          "aid": "10000001216",
+          "nick": "阿泓",
+          "rang": 30874,
+          "purchase": 9000,
+          "hist": 68300,
+          "net": 16728.333333333336
+        },
+        {
+          "rank": 7,
+          "aid": "10000000235",
+          "nick": "子揚",
+          "rang": 17320,
+          "purchase": 800,
+          "hist": 9900,
+          "net": 13633.333333333334
+        },
+        {
+          "rank": 8,
+          "aid": "10000003166",
+          "nick": "隆隆",
+          "rang": 14660,
+          "purchase": 1000,
+          "hist": 24100,
+          "net": 11216.666666666668
+        },
+        {
+          "rank": 9,
+          "aid": "10000007585",
+          "nick": "張哲",
+          "rang": 20050,
+          "purchase": 5500,
+          "hist": 7800,
+          "net": 11208.333333333336
+        },
+        {
+          "rank": 10,
+          "aid": "10000013844",
+          "nick": "Gaga",
+          "rang": 14638,
+          "purchase": 1500,
+          "hist": 3300,
+          "net": 10698.333333333334
+        }
+      ],
+      "top10": 347096.6666666666,
+      "restN": 56,
+      "rest": -830136.6666666667,
+      "positive": 409081.6666666665,
+      "top10ShareOfWins": 0.8484776878292438,
+      "smallMid": {
+        "n": 52,
+        "sum": -115488.33333333355,
+        "inTopN": 8,
+        "inTop": 300703.3333333333,
+        "outN": 44,
+        "out": -416191.6666666666
+      },
+      "lowCap": {
+        "rank": 3,
+        "aid": "10000001466",
+        "nick": "Aurora",
+        "rang": 52276,
+        "purchase": 1500,
+        "hist": 10400,
+        "net": 42063.333333333336,
+        "ratio": 4.044551282051282
+      }
+    },
+    "vip": {
+      "top": [
+        {
+          "rank": 1,
+          "aid": "10000016092",
+          "nick": "少峻",
+          "cur": 94500,
+          "prev": 43800,
+          "prevRank": 9
+        },
+        {
+          "rank": 2,
+          "aid": "10000010556",
+          "nick": "我爆了",
+          "cur": 93100,
+          "prev": 91000,
+          "prevRank": 2
+        },
+        {
+          "rank": 3,
+          "aid": "10000011491",
+          "nick": "漢頓",
+          "cur": 76000,
+          "prev": 17500,
+          "prevRank": 21
+        },
+        {
+          "rank": 4,
+          "aid": "10000004555",
+          "nick": "唐三藏",
+          "cur": 66000,
+          "prev": 50400,
+          "prevRank": 6
+        },
+        {
+          "rank": 5,
+          "aid": "10000019365",
+          "nick": "Han Sheng",
+          "cur": 65800,
+          "prev": 56000,
+          "prevRank": 5
+        },
+        {
+          "rank": 6,
+          "aid": "10000012480",
+          "nick": "楊秉霖",
+          "cur": 61000,
+          "prev": 11000,
+          "prevRank": 41
+        },
+        {
+          "rank": 7,
+          "aid": "10000017816",
+          "nick": "破擊敗特",
+          "cur": 58600,
+          "prev": 122300,
+          "prevRank": 1
+        },
+        {
+          "rank": 8,
+          "aid": "10000001055",
+          "nick": "皮皮蝦跟我走",
+          "cur": 42000,
+          "prev": 18000,
+          "prevRank": 20
+        }
+      ],
+      "prevTop1": {
+        "nick": "破擊敗特",
+        "amount": 122300
+      },
+      "share": {
+        "prev": 0.31908732916377114,
+        "cur": 0.371457152384128
+      },
+      "topSum": {
+        "prev": 551000,
+        "cur": 557000
+      },
+      "overlap": [
+        {
+          "aid": "10000016092",
+          "nick": "少峻",
+          "curRank": 1,
+          "prevRank": 9,
+          "cur": 94500,
+          "prev": 43800
+        },
+        {
+          "aid": "10000010556",
+          "nick": "我爆了",
+          "curRank": 2,
+          "prevRank": 2,
+          "cur": 93100,
+          "prev": 91000
+        },
+        {
+          "aid": "10000004555",
+          "nick": "唐三藏",
+          "curRank": 4,
+          "prevRank": 6,
+          "cur": 66000,
+          "prev": 50400
+        },
+        {
+          "aid": "10000019365",
+          "nick": "Han Sheng",
+          "curRank": 5,
+          "prevRank": 5,
+          "cur": 65800,
+          "prev": 56000
+        },
+        {
+          "aid": "10000017816",
+          "nick": "破擊敗特",
+          "curRank": 7,
+          "prevRank": 1,
+          "cur": 58600,
+          "prev": 122300
+        },
+        {
+          "aid": "10000011281",
+          "nick": "贏麻了11283",
+          "curRank": 10,
+          "prevRank": 8,
+          "cur": 38100,
+          "prev": 47300
+        }
+      ]
+    },
+    "payers": {
+      "payers": {
+        "prev": 340,
+        "cur": 301
+      },
+      "revenue": {
+        "prev": 1726800,
+        "cur": 1499500
+      },
+      "arppu": {
+        "prev": 5078.823529411765,
+        "cur": 4981.72757475083
+      },
+      "both": {
+        "n": 157,
+        "prev": 1319100,
+        "cur": 1264900
+      },
+      "gone": {
+        "n": 183,
+        "share": 0.538235294117647,
+        "active": 95
+      },
+      "newPayers": {
+        "n": 70,
+        "renewed": 25
+      }
+    },
+    "machines": {
+      "field": "validBet",
+      "prev": {
+        "topBet": [
+          {
+            "rank": 1,
+            "gameId": 584,
+            "vendorId": 7,
+            "game": "戰神賽特2",
+            "vendor": "ATG電子",
+            "players": 685,
+            "betCount": 348915,
+            "bet": 6106980,
+            "validBet": 6106980,
+            "pay": 6004105.22,
+            "netIncome": 102874.78,
+            "rtp": 98.32
+          },
+          {
+            "rank": 2,
+            "gameId": 677,
+            "vendorId": 28,
+            "game": "塔樓衝刺",
+            "vendor": "QT_電子",
+            "players": 260,
+            "betCount": 35416,
+            "bet": 4132766.19,
+            "validBet": 4132900.19,
+            "pay": 4024885.69,
+            "netIncome": 107880.5,
+            "rtp": 97.39
+          },
+          {
+            "rank": 3,
+            "gameId": 679,
+            "vendorId": 28,
+            "game": "小雞快跑",
+            "vendor": "QT_電子",
+            "players": 42,
+            "betCount": 15350,
+            "bet": 3895389.4,
+            "validBet": 3895389.4,
+            "pay": 3818519.14,
+            "netIncome": 76870.26,
+            "rtp": 98.03
+          },
+          {
+            "rank": 4,
+            "gameId": 893,
+            "vendorId": 3,
+            "game": "糖果泰迪 x1000",
+            "vendor": "BNG電子",
+            "players": 213,
+            "betCount": 77482,
+            "bet": 2573931,
+            "validBet": 2573931,
+            "pay": 2598734.4,
+            "netIncome": -24803.4,
+            "rtp": 100.96
+          },
+          {
+            "rank": 5,
+            "gameId": 730,
+            "vendorId": 1,
+            "game": "雷神之錘 II：雷霆風暴",
+            "vendor": "RSG電子",
+            "players": 324,
+            "betCount": 81800,
+            "bet": 2473976.4,
+            "validBet": 2473976.4,
+            "pay": 2532702.06,
+            "netIncome": -58725.66,
+            "rtp": 102.37
+          }
+        ],
+        "topLoss": [
+          {
+            "rank": 1,
+            "gameId": 766,
+            "vendorId": 24,
+            "game": "牛仔",
+            "vendor": "SLOTMILL電子",
+            "players": 12,
+            "betCount": 3845,
+            "bet": 1179747.5,
+            "validBet": 1179747.5,
+            "pay": 1333074.25,
+            "netIncome": -153326.75,
+            "rtp": 113,
+            "loss": 153326.75
+          },
+          {
+            "rank": 2,
+            "gameId": 21,
+            "vendorId": 7,
+            "game": "戰神賽特",
+            "vendor": "ATG電子",
+            "players": 115,
+            "betCount": 35635,
+            "bet": 688987,
+            "validBet": 688987,
+            "pay": 786383.05,
+            "netIncome": -97396.05,
+            "rtp": 114.14,
+            "loss": 97396.05
+          },
+          {
+            "rank": 3,
+            "gameId": 730,
+            "vendorId": 1,
+            "game": "雷神之錘 II：雷霆風暴",
+            "vendor": "RSG電子",
+            "players": 324,
+            "betCount": 81800,
+            "bet": 2473976.4,
+            "validBet": 2473976.4,
+            "pay": 2532702.06,
+            "netIncome": -58725.66,
+            "rtp": 102.37,
+            "loss": 58725.66
+          },
+          {
+            "rank": 4,
+            "gameId": 17,
+            "vendorId": 5,
+            "game": "一槌爆富",
+            "vendor": "ZG電子",
+            "players": 37,
+            "betCount": 5767,
+            "bet": 266062.7,
+            "validBet": 266062.7,
+            "pay": 314047.83,
+            "netIncome": -47985.13,
+            "rtp": 118.04,
+            "loss": 47985.13
+          },
+          {
+            "rank": 5,
+            "gameId": 784,
+            "vendorId": 2,
+            "game": "風暴女王",
+            "vendor": "SD超鑽電子",
+            "players": 7,
+            "betCount": 10276,
+            "bet": 550117.6,
+            "validBet": 550117.6,
+            "pay": 594694.65,
+            "netIncome": -44577.05,
+            "rtp": 108.1,
+            "loss": 44577.05
+          }
+        ],
+        "top5Loss": 402010.63999999996,
+        "allLoss": 855219.8900000002,
+        "concentration": 0.4700669906075265,
+        "totals": {
+          "machines": 390,
+          "bet": 62527604.24,
+          "validBet": 62540861.75,
+          "netIncome": 2896716.0400000033
+        }
+      },
+      "cur": {
+        "topBet": [
+          {
+            "rank": 1,
+            "gameId": 584,
+            "vendorId": 7,
+            "game": "戰神賽特2",
+            "vendor": "ATG電子",
+            "players": 328,
+            "betCount": 260156,
+            "bet": 6527299,
+            "validBet": 6527299,
+            "pay": 6241581.15,
+            "netIncome": 285717.85,
+            "rtp": 95.62
+          },
+          {
+            "rank": 2,
+            "gameId": 677,
+            "vendorId": 28,
+            "game": "塔樓衝刺",
+            "vendor": "QT_電子",
+            "players": 113,
+            "betCount": 29880,
+            "bet": 5376119.38,
+            "validBet": 5376549.38,
+            "pay": 5151118.82,
+            "netIncome": 225000.56,
+            "rtp": 95.81
+          },
+          {
+            "rank": 3,
+            "gameId": 6,
+            "vendorId": 1,
+            "game": "麻將發了",
+            "vendor": "RSG電子",
+            "players": 114,
+            "betCount": 75241,
+            "bet": 3982272.8,
+            "validBet": 3982272.8,
+            "pay": 3858925.44,
+            "netIncome": 123347.36,
+            "rtp": 96.9
+          },
+          {
+            "rank": 4,
+            "gameId": 886,
+            "vendorId": 24,
+            "game": "狂歡小丑",
+            "vendor": "SLOTMILL電子",
+            "players": 1,
+            "betCount": 4125,
+            "bet": 2475000,
+            "validBet": 2475000,
+            "pay": 2326560,
+            "netIncome": 148440,
+            "rtp": 94
+          },
+          {
+            "rank": 5,
+            "gameId": 918,
+            "vendorId": 31,
+            "game": "關老爺",
+            "vendor": "T9電子",
+            "players": 149,
+            "betCount": 27693,
+            "bet": 2269164,
+            "validBet": 2269172,
+            "pay": 2447285.78,
+            "netIncome": -178121.78,
+            "rtp": 107.85
+          }
+        ],
+        "topLoss": [
+          {
+            "rank": 1,
+            "gameId": 925,
+            "vendorId": 1,
+            "game": "皇家金象",
+            "vendor": "RSG電子",
+            "players": 77,
+            "betCount": 27502,
+            "bet": 819828,
+            "validBet": 819828,
+            "pay": 2612238.62,
+            "netIncome": -1792410.62,
+            "rtp": 318.63,
+            "loss": 1792410.62
+          },
+          {
+            "rank": 2,
+            "gameId": 921,
+            "vendorId": 3,
+            "game": "黃金公牛號",
+            "vendor": "BNG電子",
+            "players": 39,
+            "betCount": 19532,
+            "bet": 1144415,
+            "validBet": 1144415,
+            "pay": 1442229.8,
+            "netIncome": -297814.8,
+            "rtp": 126.02,
+            "loss": 297814.8
+          },
+          {
+            "rank": 3,
+            "gameId": 918,
+            "vendorId": 31,
+            "game": "關老爺",
+            "vendor": "T9電子",
+            "players": 149,
+            "betCount": 27693,
+            "bet": 2269164,
+            "validBet": 2269172,
+            "pay": 2447285.78,
+            "netIncome": -178121.78,
+            "rtp": 107.85,
+            "loss": 178121.78
+          },
+          {
+            "rank": 4,
+            "gameId": 846,
+            "vendorId": 24,
+            "game": "黑暗熔爐",
+            "vendor": "SLOTMILL電子",
+            "players": 7,
+            "betCount": 29851,
+            "bet": 860886,
+            "validBet": 860886,
+            "pay": 1027096.2,
+            "netIncome": -166210.2,
+            "rtp": 119.31,
+            "loss": 166210.2
+          },
+          {
+            "rank": 5,
+            "gameId": 856,
+            "vendorId": 7,
+            "game": "虎小妹",
+            "vendor": "ATG電子",
+            "players": 32,
+            "betCount": 13162,
+            "bet": 1209299,
+            "validBet": 1209299,
+            "pay": 1355239.51,
+            "netIncome": -145940.51,
+            "rtp": 112.07,
+            "loss": 145940.51
+          }
+        ],
+        "top5Loss": 2580497.91,
+        "allLoss": 3144133.45,
+        "concentration": 0.820734218517347,
+        "totals": {
+          "machines": 340,
+          "bet": 61622695.20000001,
+          "validBet": 61621862.63000001,
+          "netIncome": 2228347.5799999977
+        }
+      }
+    },
+    "featured": [
+      {
+        "rank": 1,
+        "gameId": 584,
+        "vendorId": 7,
+        "game": "戰神賽特2",
+        "vendor": "ATG電子",
+        "players": 328,
+        "betCount": 260156,
+        "bet": 6527299,
+        "validBet": 6527299,
+        "pay": 6241581.15,
+        "netIncome": 285717.85,
+        "rtp": 95.62,
+        "tag": "雙月 Top5"
+      },
+      {
+        "rank": 2,
+        "gameId": 677,
+        "vendorId": 28,
+        "game": "塔樓衝刺",
+        "vendor": "QT_電子",
+        "players": 113,
+        "betCount": 29880,
+        "bet": 5376119.38,
+        "validBet": 5376549.38,
+        "pay": 5151118.82,
+        "netIncome": 225000.56,
+        "rtp": 95.81,
+        "tag": "雙月 Top5"
+      },
+      {
+        "rank": 3,
+        "gameId": 6,
+        "vendorId": 1,
+        "game": "麻將發了",
+        "vendor": "RSG電子",
+        "players": 114,
+        "betCount": 75241,
+        "bet": 3982272.8,
+        "validBet": 3982272.8,
+        "pay": 3858925.44,
+        "netIncome": 123347.36,
+        "rtp": 96.9,
+        "tag": "9月 Top3"
+      },
+      {
+        "rank": 3,
+        "gameId": 679,
+        "vendorId": 28,
+        "game": "小雞快跑",
+        "vendor": "QT_電子",
+        "players": 42,
+        "betCount": 15350,
+        "bet": 3895389.4,
+        "validBet": 3895389.4,
+        "pay": 3818519.14,
+        "netIncome": 76870.26,
+        "rtp": 98.03,
+        "tag": "8月 Top3"
+      }
+    ],
+    "merchantShort": "發財豬、鴻金寶",
+    "coinRate": 1.2,
+    "sources": {
+      "api": [
+        "platformSTMT/playerStatsPurchase",
+        "platformSTMT/xLoginData",
+        "platformSTMT/purchaseRank",
+        "platformSTMT/txnRank",
+        "platformSTMT/betRank",
+        "gameSTMT/vendorGameSTMT"
+      ],
+      "sheet": "https://docs.google.com/spreadsheets/d/1PfLr_GRym0Hdgd7HQ-cDamTqsnlhExL4（總表 渠道表）"
+    }
+  }
+}

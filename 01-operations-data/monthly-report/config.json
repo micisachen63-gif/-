@@ -1,0 +1,270 @@
+{
+  "schema": 1,
+  "chrome": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+  "profileDir": ".auth/chrome",
+  "headless": true,
+  "credentialsFile": "C:\\Users\\User\\Documents\\Codex\\2026-09-18\\new-chat\\outputs\\operations-program\\private\\backend-credentials.dpapi.json",
+  "api": {
+    "vendorGameDateFormat": "YYYY-MM-DD HH:mm:ss",
+    "requestTimeoutMs": 150000
+  },
+  "brands": {
+    "win": {
+      "name": "贏麻了",
+      "theme": "win",
+      "credentialKey": "win",
+      "sheetId": "1PfLr_GRym0Hdgd7HQ-cDamTqsnlhExL4",
+      "tabs": {
+        "deposit": "贏麻了儲值",
+        "retention": "贏麻了留存"
+      },
+      "uiBase": "https://admin.winmalo.com:9955",
+      "apiBase": "https://admin.winmalo.com:9032/api",
+      "staticBase": "https://static.winmalo.com/",
+      "merchants": [
+        [
+          "10000000025",
+          "發財豬金庫"
+        ],
+        [
+          "10000000030",
+          "鴻金寶財庫"
+        ]
+      ],
+      "coinRate": 1.2,
+      "machineBetField": "validBet",
+      "machineByName": false
+    },
+    "song": {
+      "name": "爽爆",
+      "theme": "song",
+      "credentialKey": "song",
+      "sheetId": "1B72qrFdO759Lfw8iSKiJMYYJlMfgM9ks",
+      "tabs": {
+        "deposit": "爽爆儲值",
+        "retention": "爽爆留存"
+      },
+      "uiBase": "https://admin.song-yy.com:9955",
+      "apiBase": "https://admin.song-yy.com:9032/api",
+      "staticBase": "https://static.song-yy.com/",
+      "merchants": [
+        [
+          "10000000077",
+          "星星金控"
+        ],
+        [
+          "10000000078",
+          "旺旺金庫"
+        ],
+        [
+          "10000039451",
+          "大巨人金控"
+        ]
+      ]
+    },
+    "qz": {
+      "name": "茄子",
+      "theme": "qz",
+      "credentialKey": "qz",
+      "sheetId": "15GTr2a0sMYq8NbqzWLLlJa_7Drwug0DA",
+      "tabs": {
+        "deposit": "茄子儲值",
+        "retention": "茄子留存"
+      },
+      "uiBase": "https://admin.qzplays.com:9955",
+      "apiBase": "https://admin.qzplays.com:9032/api",
+      "staticBase": "https://static.qzplays.com/",
+      "merchants": [
+        [
+          "10000000031",
+          "星星金控"
+        ],
+        [
+          "10000039361",
+          "大富發金庫"
+        ]
+      ]
+    }
+  },
+  "build": {
+    "brands": [
+      "win",
+      "song",
+      "qz"
+    ]
+  },
+  "tiers": [
+    {
+      "key": "high",
+      "label": "高貢獻用戶",
+      "range": "3萬以上",
+      "min": 30000
+    },
+    {
+      "key": "mid",
+      "label": "中貢獻用戶",
+      "range": "1-3萬",
+      "min": 10000
+    },
+    {
+      "key": "low",
+      "label": "低貢獻用戶",
+      "range": "1萬以下",
+      "min": 0
+    }
+  ],
+  "drive": {
+    "folderId": "1Ua-ZQH_7XkzLg9P1HlayF_7R_BZzAZLH",
+    "sourceDeckId": "",
+    "titleTemplate": "《贏麻了&爽爆&茄子》營運{M}月數據分析報告",
+    "slides": [
+      {
+        "brand": "win",
+        "layout": "cover",
+        "slide": 1
+      },
+      {
+        "brand": "win",
+        "layout": "summary",
+        "slide": 2
+      },
+      {
+        "brand": "win",
+        "layout": "channel",
+        "slide": 3
+      },
+      {
+        "brand": "win",
+        "layout": "activity",
+        "slide": 4
+      },
+      {
+        "brand": "win",
+        "layout": "winners",
+        "slide": 5
+      },
+      {
+        "brand": "win",
+        "layout": "bleed",
+        "slide": 6
+      },
+      {
+        "brand": "win",
+        "layout": "vip",
+        "slide": 7
+      },
+      {
+        "brand": "win",
+        "layout": "vipinsight",
+        "slide": 8
+      },
+      {
+        "brand": "win",
+        "layout": "payers",
+        "slide": 9
+      },
+      {
+        "brand": "win",
+        "layout": "vipdrive",
+        "slide": 10
+      },
+      {
+        "brand": "win",
+        "layout": "bets",
+        "slide": 12
+      },
+      {
+        "brand": "win",
+        "layout": "rtp",
+        "slide": 13
+      },
+      {
+        "brand": "win",
+        "layout": "machineinsight",
+        "slide": 14
+      },
+      {
+        "brand": "win",
+        "layout": "strategy",
+        "slide": 19
+      },
+      {
+        "brand": "song",
+        "layout": "cover",
+        "slide": 20
+      },
+      {
+        "brand": "song",
+        "layout": "kpi",
+        "slide": 21
+      },
+      {
+        "brand": "song",
+        "layout": "tiers",
+        "slide": 22
+      },
+      {
+        "brand": "song",
+        "layout": "machines",
+        "slide": 23
+      },
+      {
+        "brand": "song",
+        "layout": "rtp",
+        "slide": 24
+      },
+      {
+        "brand": "song",
+        "layout": "strategy",
+        "slide": 25
+      },
+      {
+        "brand": "qz",
+        "layout": "cover",
+        "duplicateOf": 20,
+        "slide": 26
+      },
+      {
+        "brand": "qz",
+        "layout": "kpi",
+        "duplicateOf": 21,
+        "slide": 27
+      },
+      {
+        "brand": "qz",
+        "layout": "tiers",
+        "duplicateOf": 22,
+        "slide": 28
+      },
+      {
+        "brand": "qz",
+        "layout": "machines",
+        "duplicateOf": 23,
+        "slide": 29
+      },
+      {
+        "brand": "qz",
+        "layout": "rtp",
+        "duplicateOf": 24,
+        "slide": 30
+      },
+      {
+        "brand": "qz",
+        "layout": "strategy",
+        "duplicateOf": 25,
+        "slide": 31
+      }
+    ],
+    "sourceTitleTemplate": "《贏麻了&爽爆》營運{M}月數據分析報告",
+    "manualSlides": {
+      "win": [
+        11,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    "note": "qz 第一次（來源簡報只有 25 頁）會複製 爽爆 20-25 放到最後；之後來源簡報已有 31 頁，就直接換 26-31 頁。11、15-18 頁不動（人工填）。"
+  }
+}

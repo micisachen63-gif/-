@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "enabled": true,
+  "weeklyEnabled": true,
+  "timezone": "Asia/Taipei",
+  "telegramConfigPath": "C:\\Users\\User\\Documents\\ChatGPT\\神殿守望者\\telegram.local.json",
+  "approvedMonth": "2026-10",
+  "browserProfile": "C:\\Users\\User\\Desktop\\private\\chrome-profile",
+  "browserMode": "attach",
+  "browserBackground": "minimized",
+  "localControlApproved": true,
+  "revenueId": "1I9qDQZC4NYZDJN5f_Qil6zf9B9YXlQ7mLRUeVTg7dYo",
+  "platforms": [
+    {
+      "key": "win",
+      "name": "贏麻了",
+      "url": "https://admin.winmalo.com:9955",
+      "sheetId": "1PfLr_GRym0Hdgd7HQ-cDamTqsnlhExL4",
+      "monthly": {
+        "revenue": "B12",
+        "bet": "K12",
+        "dau": "B39",
+        "members": "Q48",
+        "average": "T48"
+      },
+      "revenueColumn": "I",
+      "coinDateColumn": "AN",
+      "coinNameColumn": "AO",
+      "coinValueColumn": "AP",
+      "merchants": [
+        [
+          "10000000025",
+          "發財豬金庫"
+        ],
+        [
+          "10000000030",
+          "鴻金寶財庫"
+        ]
+      ]
+    },
+    {
+      "key": "song",
+      "name": "爽爆",
+      "url": "https://admin.song-yy.com:9955",
+      "sheetId": "1B72qrFdO759Lfw8iSKiJMYYJlMfgM9ks",
+      "monthly": {
+        "revenue": "B34",
+        "bet": "K34",
+        "dau": "B69",
+        "members": "Q60",
+        "average": "T60"
+      },
+      "revenueColumn": "D",
+      "coinDateColumn": "AG",
+      "coinNameColumn": "AH",
+      "coinValueColumn": "AI",
+      "merchants": [
+        [
+          "10000000077",
+          "星星金控"
+        ],
+        [
+          "10000000078",
+          "旺旺金庫"
+        ],
+        [
+          "10000039451",
+          "大巨人金控"
+        ]
+      ]
+    },
+    {
+      "key": "qz",
+      "name": "茄子",
+      "url": "https://admin.qzplays.com:9955",
+      "sheetId": "15GTr2a0sMYq8NbqzWLLlJa_7Drwug0DA",
+      "monthly": {
+        "revenue": "B12",
+        "bet": "K12",
+        "dau": "B30",
+        "members": "Q37",
+        "average": "T37"
+      },
+      "revenueColumn": "E",
+      "coinDateColumn": "AW",
+      "coinNameColumn": "AX",
+      "coinValueColumn": "AY",
+      "merchants": [
+        [
+          "10000000031",
+          "星星金控"
+        ],
+        [
+          "10000039361",
+          "大富發金庫"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+name = "ops-bigwin-monitor"
+main = "index.js"
+compatibility_date = "2025-09-01"
+
+[triggers]
+crons = ["*/5 * * * *"]

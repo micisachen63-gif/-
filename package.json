@@ -1,0 +1,17 @@
+{
+  "name": "ops-automation-suite",
+  "version": "1.0.0",
+  "description": "三平台營運自動化系統全套組（營運數據、新手禮包、爆分監控、撿台機器人、社群小遊戲）",
+  "type": "module",
+  "scripts": {
+    "start": "node scheduler/index.js",
+    "ops": "node 01-operations-data/run.mjs",
+    "gift": "powershell -File 02-daily-gift/run-daily.ps1",
+    "monitor": "node 03-bigwin-monitor/src/index.js",
+    "sniper:sb": "node 04-slot-sniper/shuangbao/src/index.js run",
+    "sniper:qz": "node 04-slot-sniper/qiezi/src/index.js run"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0"
+  }
+}

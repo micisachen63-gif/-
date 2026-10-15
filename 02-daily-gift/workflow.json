@@ -1,0 +1,17 @@
+{
+  "timezone": "Asia/Taipei",
+  "cohort": "previous-calendar-day",
+  "platformSteps": [
+    { "step": "open-player-list", "route": "/player/list" },
+    { "step": "filter-registration-date", "radioLabel": "創辦時間", "start": "00:00:00", "end": "23:59:59" },
+    { "step": "export-member-list", "requiredColumns": ["會員ID", "註冊時間"] },
+    { "step": "load-brand-sheet", "sheetTab": "brand-specific" },
+    { "step": "existing-apps-script", "menu": "【省時小精靈】", "actions": ["【找出充值150以上用戶】", "【找出充值未達150用戶】", "【生成1:1派送名單】", "【LINE推送名單下載】"] },
+    { "step": "audit-existing-mail", "route": "/gm/mail", "tabs": ["未來信件排程", "已寄送信件"] },
+    { "step": "mail-gift", "only-if-not-already-sent-or-scheduled": true },
+    { "step": "import-line-audience", "accountFromConfig": true },
+    { "step": "audit-existing-line-broadcast", "route": "/broadcast" },
+    { "step": "schedule-brand-broadcast", "time": "18:00", "only-if-not-already-sent-or-scheduled": true }
+  ],
+  "guardrails": ["Never rewrite the existing Apps Script segmentation logic.", "Never repeat a brand/date mail or LINE broadcast.", "Stop only the affected brand on missing data or an unverifiable UI result.", "Do not process non-newbie tabs or brands."]
+}

@@ -1,0 +1,164 @@
+{
+  "title": "[測試] 《贏麻了&爽爆&茄子》營運8月數據分析報告",
+  "url": "https://docs.google.com/open?id=1QECN3oj8gUI4devdJVy3_7MdiibA6YrRpLLldsWrco0",
+  "slideCount": 31,
+  "at": "2026-10-01T05:51:45.833Z",
+  "slides": [
+    {
+      "slide": 1,
+      "brand": "win",
+      "layout": "cover",
+      "how": "image"
+    },
+    {
+      "slide": 2,
+      "brand": "win",
+      "layout": "summary",
+      "how": "image"
+    },
+    {
+      "slide": 3,
+      "brand": "win",
+      "layout": "channel",
+      "how": "image"
+    },
+    {
+      "slide": 4,
+      "brand": "win",
+      "layout": "activity",
+      "how": "image"
+    },
+    {
+      "slide": 5,
+      "brand": "win",
+      "layout": "winners",
+      "how": "image"
+    },
+    {
+      "slide": 6,
+      "brand": "win",
+      "layout": "bleed",
+      "how": "image"
+    },
+    {
+      "slide": 7,
+      "brand": "win",
+      "layout": "vip",
+      "how": "image"
+    },
+    {
+      "slide": 8,
+      "brand": "win",
+      "layout": "vipinsight",
+      "how": "image"
+    },
+    {
+      "slide": 9,
+      "brand": "win",
+      "layout": "payers",
+      "how": "image"
+    },
+    {
+      "slide": 10,
+      "brand": "win",
+      "layout": "vipdrive",
+      "how": "image"
+    },
+    {
+      "slide": 12,
+      "brand": "win",
+      "layout": "bets",
+      "how": "image"
+    },
+    {
+      "slide": 13,
+      "brand": "win",
+      "layout": "rtp",
+      "how": "image"
+    },
+    {
+      "slide": 14,
+      "brand": "win",
+      "layout": "machineinsight",
+      "how": "image"
+    },
+    {
+      "slide": 19,
+      "brand": "win",
+      "layout": "strategy",
+      "how": "image"
+    },
+    {
+      "slide": 20,
+      "brand": "song",
+      "layout": "cover",
+      "how": "background"
+    },
+    {
+      "slide": 21,
+      "brand": "song",
+      "layout": "kpi",
+      "how": "background"
+    },
+    {
+      "slide": 22,
+      "brand": "song",
+      "layout": "tiers",
+      "how": "background"
+    },
+    {
+      "slide": 23,
+      "brand": "song",
+      "layout": "machines",
+      "how": "background"
+    },
+    {
+      "slide": 24,
+      "brand": "song",
+      "layout": "rtp",
+      "how": "background"
+    },
+    {
+      "slide": 25,
+      "brand": "song",
+      "layout": "strategy",
+      "how": "background"
+    },
+    {
+      "slide": 26,
+      "brand": "qz",
+      "layout": "cover",
+      "how": "background"
+    },
+    {
+      "slide": 27,
+      "brand": "qz",
+      "layout": "kpi",
+      "how": "background"
+    },
+    {
+      "slide": 28,
+      "brand": "qz",
+      "layout": "tiers",
+      "how": "background"
+    },
+    {
+      "slide": 29,
+      "brand": "qz",
+      "layout": "machines",
+      "how": "background"
+    },
+    {
+      "slide": 30,
+      "brand": "qz",
+      "layout": "rtp",
+      "how": "background"
+    },
+    {
+      "slide": 31,
+      "brand": "qz",
+      "layout": "strategy",
+      "how": "background"
+    }
+  ]
+}

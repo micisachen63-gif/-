@@ -1,0 +1,12 @@
+{
+  "name": "monthly-deck",
+  "private": true,
+  "type": "module",
+  "description": "月報簡報：每月自動產生爽爆／茄子營運簡報圖片與 PPTX（零 AI）",
+  "scripts": { "build": "node src/index.js build" },
+  "dependencies": {
+    "playwright-core": "^1.55.0",
+    "pptxgenjs": "^3.12.0",
+    "xlsx": "^0.18.5"
+  }
+}

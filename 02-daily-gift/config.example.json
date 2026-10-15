@@ -1,0 +1,66 @@
+{
+  "timezone": "Asia/Taipei",
+  "spreadsheet": {
+    "name": "全產品新手禮包-發送工具",
+    "url": "https://docs.google.com/spreadsheets/d/1Rp-XsnRn3AOoTOE45lRq_jNa1lprVlHfaElsk4ugzaI/edit",
+    "automation": {
+      "triggerVerified": false,
+      "cleanupVerified": false
+    }
+  },
+  "brands": {
+    "qiezi": {
+      "name": "茄子",
+      "adminUrl": "https://admin.qzplays.com:9955/",
+      "playerListUrl": "https://admin.qzplays.com:9955/player/list",
+      "mailUrl": "https://admin.qzplays.com:9955/gm/mail",
+      "inbox": "./inbox/qiezi",
+      "memberIdColumn": "AID",
+      "registeredAtColumn": "創帳時間",
+      "automation": { "selectorsVerified": false }
+    },
+    "songyy": {
+      "name": "爽爆",
+      "adminUrl": "https://admin.song-yy.com:9955/",
+      "playerListUrl": "https://admin.song-yy.com:9955/player/list",
+      "mailUrl": "https://admin.song-yy.com:9955/gm/mail",
+      "inbox": "./inbox/songyy",
+      "memberIdColumn": "AID",
+      "registeredAtColumn": "創帳時間",
+      "automation": { "selectorsVerified": false }
+    },
+    "winmalo": {
+      "name": "贏麻了",
+      "adminUrl": "https://admin.winmalo.com:9955/",
+      "playerListUrl": "https://admin.winmalo.com:9955/player/list",
+      "mailUrl": "https://admin.winmalo.com:9955/gm/mail",
+      "inbox": "./inbox/winmalo",
+      "memberIdColumn": "AID",
+      "registeredAtColumn": "創帳時間",
+      "automation": { "selectorsVerified": false }
+    }
+  },
+  "rewards": {
+    "qiezi": { "atLeast150": { "coins": 1000, "couponPercent": 20, "couponCount": 1 }, "below150": { "coins": 250, "couponPercent": 20, "couponCount": 1 } },
+    "songyy": { "atLeast150": { "coins": 1000, "couponPercent": 20, "couponCount": 1 }, "below150": { "coins": 250, "couponPercent": 20, "couponCount": 1 } },
+    "winmalo": { "coins": 58, "turnoverMultiple": 20, "list": "existing-1-to-1" }
+  },
+  "line": {
+    "audienceUpdateRequired": true,
+    "broadcastLocalTime": "18:00",
+    "api": {
+      "credentialsConfigured": false,
+      "pushIntegrationVerified": false,
+      "credentialsEnvVar": "LINE_CHANNEL_ACCESS_TOKEN"
+    },
+    "accounts": {
+      "qiezi": { "name": "遊戲茄子娛樂城", "id": "@334ojgrp", "url": "https://manager.line.biz/account/@334ojgrp/broadcast" },
+      "songyy": { "name": "爽爆娛樂城", "id": "@270zjale", "url": "https://manager.line.biz/account/@270zjale/broadcast" },
+      "winmalo": { "name": "贏麻了online", "id": "@502osqfx", "url": "https://manager.line.biz/account/@502osqfx/broadcast" }
+    }
+  },
+  "automation": {
+    "browserExecutable": "",
+    "profileDirectory": ""
+  }
+}

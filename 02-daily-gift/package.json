@@ -1,0 +1,20 @@
+{
+  "name": "daily-gift-dispatch-operator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "daily": "node src/daily-runner.cjs",
+    "verify": "node src/daily-runner.cjs --verify-only",
+    "status": "node src/cli.js status",
+    "test:telegram": "node --test src/telegram-notify.test.cjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@google-cloud/local-auth": "^3.0.1",
+    "googleapis": "^181.0.0",
+    "playwright": "^1.63.0"
+  }
+}
