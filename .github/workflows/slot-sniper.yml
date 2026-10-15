@@ -1,0 +1,37 @@
+name: Cloud Slot Sniper Scheduled Runner
+
+on:
+  schedule:
+    # 爽爆固定時段 (Taipei: 02:00, 07:00, 15:00, 20:00 -> UTC: 18:00, 23:00, 07:00, 12:00)
+    - cron: '0 18,23,7,12 * * *'
+    # 茄子固定時段 (Taipei: 00:00, 08:00, 10:00, 12:00, 14:00, 18:00, 20:00, 22:00 -> UTC: 16:00, 00:00, 02:00, 04:00, 06:00, 10:00, 12:00, 14:00)
+    - cron: '0 16,0,2,4,6,10,14 * * *'
+  workflow_dispatch: # 支援在 GitHub 網頁上或手機 App 一鍵手動觸發測試
+
+jobs:
+  run-snipers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: 📥 下載專案代碼
+        uses: actions/checkout@v4
+
+      - name: 🟢 設定 Node.js 環境
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 📦 安裝核心相依套件
+        run: |
+          npm install
+          npx playwright install --with-deps chromium
+
+      - name: 🎰 執行雲端機台狙擊手
+        env:
+          HEADLESS: 'true'
+          NODE_ENV: 'production'
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          node 04-slot-sniper/run-cloud-sniper.mjs --brand=all
