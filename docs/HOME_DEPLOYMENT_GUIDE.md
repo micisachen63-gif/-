@@ -54,6 +54,18 @@ cp .env.example .env
   ```bash
   npm run sniper:qz
   ```
+- 贏麻選台測試：
+  ```bash
+  npm run sniper:ym
+  ```
+- 三品牌全套測試：
+  ```bash
+  npm run sniper:cloud
+  ```
+- 依目前台北時間自動比對品牌執行：
+  ```bash
+  npm run sniper:auto
+  ```
 
 ### 2. 營運數據表（手動測試）
 - 乾跑不寫入測試：

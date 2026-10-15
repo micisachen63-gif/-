@@ -9,7 +9,10 @@
     "gift": "powershell -File 02-daily-gift/run-daily.ps1",
     "monitor": "node 03-bigwin-monitor/src/index.js",
     "sniper:sb": "node 04-slot-sniper/shuangbao/src/index.js run",
-    "sniper:qz": "node 04-slot-sniper/qiezi/src/index.js run"
+    "sniper:qz": "node 04-slot-sniper/qiezi/src/index.js run",
+    "sniper:ym": "node 04-slot-sniper/yingma/src/index.js run",
+    "sniper:cloud": "node 04-slot-sniper/run-cloud-sniper.mjs --brand=all",
+    "sniper:auto": "node 04-slot-sniper/run-cloud-sniper.mjs --auto"
   },
   "dependencies": {
     "playwright": "^1.40.0"

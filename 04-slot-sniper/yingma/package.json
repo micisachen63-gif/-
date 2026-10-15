@@ -1,0 +1,19 @@
+{
+  "name": "yingma-slot-sniper",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "login": "node src/index.js login",
+    "run": "node src/index.js run",
+    "dry-run": "node src/index.js run --dry-run",
+    "test": "node --test",
+    "send-last": "node src/index.js send-last"
+  },
+  "dependencies": {
+    "playwright": "^1.55.0"
+  }
+}

@@ -2,11 +2,23 @@ name: Cloud Slot Sniper Scheduled Runner
 
 on:
   schedule:
-    # 爽爆固定時段 (Taipei: 02:00, 07:00, 15:00, 20:00 -> UTC: 18:00, 23:00, 07:00, 12:00)
-    - cron: '0 18,23,7,12 * * *'
-    # 茄子固定時段 (Taipei: 00:00, 08:00, 10:00, 12:00, 14:00, 18:00, 20:00, 22:00 -> UTC: 16:00, 00:00, 02:00, 04:00, 06:00, 10:00, 12:00, 14:00)
-    - cron: '0 16,0,2,4,6,10,14 * * *'
-  workflow_dispatch: # 支援在 GitHub 網頁上或手機 App 一鍵手動觸發測試
+    # 涵蓋爽爆、茄子、贏麻三大品牌之每日發送時段 (台北時間對應 UTC)
+    # Taipei: 00:00, 02:00, 07:00, 08:00, 10:00, 12:00, 14:00, 15:00, 18:00, 20:00, 22:00
+    # UTC:    16:00, 18:00, 23:00, 00:00, 02:00, 04:00, 06:00, 07:00, 10:00, 12:00, 14:00
+    - cron: '0 0,2,4,6,7,10,12,14,16,18,23 * * *'
+  workflow_dispatch:
+    inputs:
+      brand:
+        description: '選擇欲執行的品牌'
+        required: true
+        default: 'auto'
+        type: choice
+        options:
+          - auto
+          - all
+          - shuangbao
+          - qiezi
+          - yingma
 
 jobs:
   run-snipers:
@@ -34,4 +46,10 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          node 04-slot-sniper/run-cloud-sniper.mjs --brand=all
+          TARGET_BRAND="${{ github.event.inputs.brand || 'auto' }}"
+          echo "執行模式: $TARGET_BRAND"
+          if [ "$TARGET_BRAND" = "auto" ]; then
+            node 04-slot-sniper/run-cloud-sniper.mjs --auto
+          else
+            node 04-slot-sniper/run-cloud-sniper.mjs --brand=$TARGET_BRAND
+          fi

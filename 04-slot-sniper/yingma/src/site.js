@@ -73,7 +73,16 @@ async function browserContext(config, headless, interactiveLogin = false) {
     console.log(`Chrome 啟動失敗，清 profile 鎖後重試：${error.message.split('\n')[0]}`);
     releaseChromeProfile(config.profilePath);
     await new Promise((resolve) => setTimeout(resolve, 1500));
-    return chromium.launchPersistentContext(config.profilePath, launchOptions);
+    try {
+      return await chromium.launchPersistentContext(config.profilePath, launchOptions);
+    } catch (err2) {
+      if (launchOptions.channel) {
+        console.log('改用 Playwright 內建 Chromium 啟動…');
+        delete launchOptions.channel;
+        return await chromium.launchPersistentContext(config.profilePath, launchOptions);
+      }
+      throw err2;
+    }
   }
 }
 
