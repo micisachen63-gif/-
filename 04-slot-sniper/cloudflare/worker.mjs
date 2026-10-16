@@ -38,7 +38,14 @@ function credentials(env, brand) {
 }
 
 export class SlotContainer extends DurableObject {
-  async ready(brand, interactive = false) {
+  constructor(ctx, env) {
+    super(ctx, env);
+    if (ctx.container.running) {
+      void ctx.blockConcurrencyWhile(() => ctx.container.setInactivityTimeout(50 * 60 * 1000));
+    }
+  }
+
+  async ready(brand, inactivityMs = 2 * 60 * 1000) {
     const container = this.ctx.container;
     if (!container.running) {
       const snapshot = await this.ctx.storage.get('snapshot');
@@ -51,7 +58,7 @@ export class SlotContainer extends DurableObject {
       else options.image = container.images.base;
       container.start(options);
     }
-    await container.setInactivityTimeout(interactive ? 30 * 60 * 1000 : 2 * 60 * 1000);
+    await container.setInactivityTimeout(inactivityMs);
     const port = container.getTcpPort(8080);
     let lastError;
     for (let attempt = 0; attempt < 60; attempt++) {
@@ -77,7 +84,7 @@ export class SlotContainer extends DurableObject {
     const key = `${brand}:${scheduleAt}`;
     if (await this.ctx.storage.get('lastScheduledKey') === key) return { skipped: 'already scheduled' };
     if (!(await this.ctx.storage.get('snapshot'))) throw new Error(`${brand} has no saved LINE login`);
-    const port = await this.ready(brand);
+    const port = await this.ready(brand, 50 * 60 * 1000);
     const response = await port.fetch('http://container/run', { method: 'POST' });
     if (!response.ok) throw new Error(`${brand} run rejected: ${response.status}`);
     await this.ctx.storage.put('lastScheduledKey', key);
@@ -90,7 +97,7 @@ export class SlotContainer extends DurableObject {
     const pending = await this.ctx.storage.get('pending');
     if (!pending) return;
     try {
-      const port = await this.ready(pending.brand);
+      const port = await this.ready(pending.brand, 50 * 60 * 1000);
       const response = await port.fetch('http://container/status');
       const status = await response.json();
       if (status.current) {
@@ -100,6 +107,7 @@ export class SlotContainer extends DurableObject {
       await this.ctx.storage.put('lastResult', status.last);
       await this.ctx.storage.delete('pending');
       await this.save();
+      await this.ctx.container.setInactivityTimeout(2 * 60 * 1000);
     } catch (error) {
       console.error('Run monitoring failed', error);
       await this.ctx.storage.setAlarm(Date.now() + 60000);
@@ -112,7 +120,7 @@ export class SlotContainer extends DurableObject {
     const brand = parts[2];
     if (!BRANDS.includes(brand)) return json({ error: 'Invalid brand' }, 400);
     if (parts[1] === 'console') {
-      await this.ready(brand, true);
+      await this.ready(brand, 30 * 60 * 1000);
       const suffix = '/' + parts.slice(3).join('/');
       const target = new URL(`http://container${suffix}`);
       target.search = url.search;
@@ -125,14 +133,15 @@ export class SlotContainer extends DurableObject {
       if (!this.ctx.container.running) return json({ running: false, snapshotAt, lastResult });
       const port = await this.ready(brand);
       const live = await (await port.fetch('http://container/status')).json();
+      if (live.current) await this.ctx.container.setInactivityTimeout(50 * 60 * 1000);
       return json({ running: true, snapshotAt, lastResult, live });
     }
     if (parts[1] === 'login' && request.method === 'POST') {
-      const port = await this.ready(brand, true);
+      const port = await this.ready(brand, 30 * 60 * 1000);
       return port.fetch('http://container/login', { method: 'POST' });
     }
     if (parts[1] === 'dry-run' && request.method === 'POST') {
-      const port = await this.ready(brand);
+      const port = await this.ready(brand, 50 * 60 * 1000);
       return port.fetch('http://container/run?dry=1', { method: 'POST' });
     }
     return json({ error: 'Not found' }, 404);
@@ -146,7 +155,7 @@ export default {
     if (url.pathname === '/admin' && request.method === 'GET') {
       const authenticated = await isAdmin(request, env);
       const body = authenticated
-        ? `<h1>掃台雲端登入與驗證</h1>${BRANDS.map(brand => `<section><h2>${brand}</h2><p><a href="/admin/console/${brand}/vnc.html?path=admin/console/${brand}/websockify">開啟登入畫面</a>　<a href="/admin/status/${brand}">查看狀態</a></p><form method="post" action="/admin/login/${brand}"><button>開始 LINE 登入</button></form><form method="post" action="/admin/snapshot/${brand}"><button>登入完成後保存狀態</button></form><form method="post" action="/admin/dry-run/${brand}"><button>只掃描、不發送</button></form></section>`).join('')}`
+        ? `<h1>掃台雲端登入與驗證</h1>${BRANDS.map(brand => `<section><h2>${brand}</h2><p><a href="/admin/console/${brand}/vnc.html?autoconnect=1&path=admin/console/${brand}/websockify">開啟登入畫面</a>　<a href="/admin/status/${brand}">查看狀態</a></p><form method="post" action="/admin/login/${brand}"><button>開始 LINE 登入</button></form><form method="post" action="/admin/snapshot/${brand}"><button>登入完成後保存狀態</button></form><form method="post" action="/admin/dry-run/${brand}"><button>只掃描、不發送</button></form></section>`).join('')}`
         : '<form method="post" action="/admin/session"><label>管理密鑰 <input type="password" name="key" autocomplete="off"></label><button>登入</button></form>';
       return new Response(body, {
         headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' },
