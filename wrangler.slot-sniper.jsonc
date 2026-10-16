@@ -10,7 +10,7 @@
   "containers": [{
     "class_name": "SlotContainer",
     "scheduling_policy": "durable_object",
-    "images": { "base": { "dockerfile": "04-slot-sniper/cloudflare/Dockerfile", "build_context": "." } }
+    "images": { "base": { "image": "registry.cloudflare.com/48259a9f84c8307f8de8ceaf704b9f8f/slot-sniper-cloud-slotcontainer-base@sha256:c138aa0931ff6e12fc6ee112f29fa2c5adb7b5056f73798419ea04bef51aa64c" } }
   }],
   "durable_objects": { "bindings": [{ "name": "SLOT_CONTAINER", "class_name": "SlotContainer" }] },
   "exports": { "SlotContainer": { "type": "durable-object", "storage": "sqlite" } },
