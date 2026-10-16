@@ -146,7 +146,7 @@ export default {
     if (url.pathname === '/admin' && request.method === 'GET') {
       const authenticated = await isAdmin(request, env);
       const body = authenticated
-        ? `<h1>掃台雲端登入與驗證</h1>${BRANDS.map(brand => `<section><h2>${brand}</h2><p><a href="/admin/console/${brand}/vnc.html">開啟登入畫面</a>　<a href="/admin/status/${brand}">查看狀態</a></p><form method="post" action="/admin/login/${brand}"><button>開始 LINE 登入</button></form><form method="post" action="/admin/snapshot/${brand}"><button>登入完成後保存狀態</button></form><form method="post" action="/admin/dry-run/${brand}"><button>只掃描、不發送</button></form></section>`).join('')}`
+        ? `<h1>掃台雲端登入與驗證</h1>${BRANDS.map(brand => `<section><h2>${brand}</h2><p><a href="/admin/console/${brand}/vnc.html?path=admin/console/${brand}/websockify">開啟登入畫面</a>　<a href="/admin/status/${brand}">查看狀態</a></p><form method="post" action="/admin/login/${brand}"><button>開始 LINE 登入</button></form><form method="post" action="/admin/snapshot/${brand}"><button>登入完成後保存狀態</button></form><form method="post" action="/admin/dry-run/${brand}"><button>只掃描、不發送</button></form></section>`).join('')}`
         : '<form method="post" action="/admin/session"><label>管理密鑰 <input type="password" name="key" autocomplete="off"></label><button>登入</button></form>';
       return new Response(body, {
         headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' },
