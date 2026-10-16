@@ -19,13 +19,22 @@ function start(command, dryRun = false) {
     cwd: root,
     env: { ...process.env, DISPLAY: ':99', HEADLESS: command === 'login' ? 'false' : 'true' },
     stdio: 'inherit',
+    detached: true,
   });
   current = { command, dryRun, startedAt, pid: child.pid };
+  const deadline = command === 'run' ? setTimeout(() => {
+    if (current?.pid !== child.pid) return;
+    console.error(`${brand} scan exceeded 45 minutes; stopping process group`);
+    try { process.kill(-child.pid, 'SIGTERM'); } catch { child.kill('SIGTERM'); }
+  }, 45 * 60 * 1000) : null;
+  deadline?.unref();
   child.once('error', error => {
+    if (deadline) clearTimeout(deadline);
     last = { ...current, finishedAt: new Date().toISOString(), ok: false, error: error.message };
     current = null;
   });
   child.once('close', code => {
+    if (deadline) clearTimeout(deadline);
     if (!current) return;
     last = { ...current, finishedAt: new Date().toISOString(), ok: code === 0, exitCode: code };
     current = null;
