@@ -1,0 +1,10 @@
+.git
+**/node_modules
+**/.auth
+**/.env
+**/logs
+**/state
+**/staging
+**/*.dpapi.json
+**/*.key
+**/*.lock

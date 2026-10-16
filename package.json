@@ -12,7 +12,8 @@
     "sniper:qz": "node 04-slot-sniper/qiezi/src/index.js run",
     "sniper:ym": "node 04-slot-sniper/yingma/src/index.js run",
     "sniper:cloud": "node 04-slot-sniper/run-cloud-sniper.mjs --brand=all",
-    "sniper:auto": "node 04-slot-sniper/run-cloud-sniper.mjs --auto"
+    "sniper:auto": "node 04-slot-sniper/run-cloud-sniper.mjs --auto",
+    "deploy:slot-cloud": "npx wrangler@4.151.0 deploy --config wrangler.slot-sniper.jsonc"
   },
   "dependencies": {
     "playwright": "^1.40.0"

@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "slot-sniper-cloud",
+  "main": "04-slot-sniper/cloudflare/worker.mjs",
+  "compatibility_date": "2026-10-16",
+  "observability": { "enabled": true },
+  "triggers": {
+    "crons": ["0 0,2,4,6,7,10,12,14,16,18,23 * * *"]
+  },
+  "containers": [{
+    "class_name": "SlotContainer",
+    "scheduling_policy": "durable_object",
+    "images": { "base": { "dockerfile": "04-slot-sniper/cloudflare/Dockerfile", "build_context": "." } }
+  }],
+  "durable_objects": { "bindings": [{ "name": "SLOT_CONTAINER", "class_name": "SlotContainer" }] },
+  "exports": { "SlotContainer": { "type": "durable-object", "storage": "sqlite" } },
+  "vars": { "CLOUD_ENABLED": "false" }
+}
