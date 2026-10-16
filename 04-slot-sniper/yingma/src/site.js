@@ -223,7 +223,15 @@ async function enterGameViaLobby(page, config, game) {
   const card = page.locator(`a.game-item:has(img[src*="/${game.lobbyId}/"])`);
   await card.waitFor({ state: 'visible', timeout: 15000 });
   console.log(`已找到「${game.name}」，正在進入遊戲。`);
-  await card.click();
+  for (let attempt = 0; ; attempt++) {
+    try { await card.click({ timeout: 10000 }); break; }
+    catch (error) {
+      if (attempt >= 2 || !/intercepts pointer events|Timeout/i.test(error.message)) throw error;
+      // Lobby ads can appear after the card becomes visible and intercept the click.
+      console.log(`[site] 遊戲卡片被新彈窗擋住，關閉後重試（${attempt + 1}/2）`);
+      await dismissLobbyAds(page);
+    }
+  }
   const frameLocator = page.locator(FRAME_SELECTOR).first();
   const transfer = page.getByText('快速轉點', { exact: true });
   const next = await Promise.race([
