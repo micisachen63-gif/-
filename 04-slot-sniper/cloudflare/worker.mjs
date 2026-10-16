@@ -127,6 +127,16 @@ export class SlotContainer extends DurableObject {
       return this.ctx.container.getTcpPort(6080).fetch(new Request(target.toString(), request));
     }
     if (parts[1] === 'snapshot' && request.method === 'POST') return this.save();
+    if (parts[1] === 'diagnostics' && request.method === 'GET') {
+      await this.ready(brand, 10 * 60 * 1000);
+      const script = `const fs=require('fs');const root='/app/04-slot-sniper/${brand}';let lines=[];let games=[];try{lines=fs.readFileSync(root+'/logs/bot.log','utf8').trim().split('\\n').slice(-25)}catch{};try{games=Object.keys(JSON.parse(fs.readFileSync(root+'/.auth/game-urls.json','utf8')))}catch{};console.log(JSON.stringify({lines,games}))`;
+      const process = await this.ctx.container.exec(['node', '-e', script]);
+      const output = await process.output();
+      if (output.exitCode !== 0) return json({ error: 'Unable to read diagnostics' }, 500);
+      const data = JSON.parse(new TextDecoder().decode(output.stdout));
+      const lines = data.lines.map(line => line.replace(/https?:\/\/\S+/g, '[URL]').replace(/\b\d{7,12}:[A-Za-z0-9_-]{35}\b/g, '[BOT_TOKEN]'));
+      return json({ lines, games: data.games });
+    }
     if (parts[1] === 'status' && request.method === 'GET') {
       const snapshotAt = await this.ctx.storage.get('snapshotAt');
       const lastResult = await this.ctx.storage.get('lastResult');
