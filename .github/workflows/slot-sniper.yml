@@ -22,8 +22,10 @@ on:
 
 jobs:
   run-snipers:
+    # Keep the existing Windows schedules active until cloud auth and routing are verified.
+    if: github.event_name == 'workflow_dispatch' || vars.SLOT_SNIPER_CLOUD_ENABLED == 'true'
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 90
 
     steps:
       - name: 📥 下載專案代碼
@@ -32,7 +34,7 @@ jobs:
       - name: 🟢 設定 Node.js 環境
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: 📦 安裝核心相依套件
         run: |
@@ -43,8 +45,13 @@ jobs:
         env:
           HEADLESS: 'true'
           NODE_ENV: 'production'
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SHUANGBAO_TELEGRAM_BOT_TOKEN: ${{ secrets.SHUANGBAO_TELEGRAM_BOT_TOKEN }}
+          SHUANGBAO_TELEGRAM_CHAT_ID: ${{ secrets.SHUANGBAO_TELEGRAM_CHAT_ID }}
+          QIEZI_TELEGRAM_BOT_TOKEN: ${{ secrets.QIEZI_TELEGRAM_BOT_TOKEN }}
+          QIEZI_TELEGRAM_CHAT_ID: ${{ secrets.QIEZI_TELEGRAM_CHAT_ID }}
+          YINGMA_TELEGRAM_BOT_TOKEN: ${{ secrets.YINGMA_TELEGRAM_BOT_TOKEN }}
+          YINGMA_TELEGRAM_CHAT_ID: ${{ secrets.YINGMA_TELEGRAM_CHAT_ID }}
+          SCHEDULE_CRON: ${{ github.event.schedule }}
         run: |
           TARGET_BRAND="${{ github.event.inputs.brand || 'auto' }}"
           echo "執行模式: $TARGET_BRAND"
