@@ -99,7 +99,11 @@ export class SlotContainer extends DurableObject {
 
   async repairDisplay(brand) {
     await this.ready(brand, 30 * 60 * 1000);
-    const script = `if ! pgrep -x Xvfb >/dev/null; then rm -f /tmp/.X99-lock /tmp/.X11-unix/X99; nohup Xvfb :99 -screen 0 1440x900x24 -nolisten tcp >/tmp/xvfb.log 2>&1 </dev/null & sleep 2; fi; if ! pgrep -x x11vnc >/dev/null; then nohup x11vnc -display :99 -forever -shared -nopw -listen 127.0.0.1 -rfbport 5900 -quiet >/tmp/x11vnc.log 2>&1 </dev/null & fi; if ! pgrep -f '[w]ebsockify --web' >/dev/null; then nohup websockify --web=/usr/share/novnc 0.0.0.0:6080 127.0.0.1:5900 >/tmp/websockify.log 2>&1 </dev/null & fi; sleep 1; pgrep -x Xvfb >/dev/null && pgrep -x x11vnc >/dev/null && pgrep -f '[w]ebsockify --web' >/dev/null`;
+    const script = `probe() { node -e "const n=require('net');const t=process.argv[1];const s=t==='x'?n.connect('/tmp/.X11-unix/X99'):n.connect(Number(t),'127.0.0.1');s.on('connect',()=>{s.destroy();process.exit(0)});s.on('error',()=>process.exit(1));setTimeout(()=>process.exit(1),1200);" "$1" >/dev/null 2>&1; }
+if ! probe x; then rm -f /tmp/.X99-lock /tmp/.X11-unix/X99; nohup Xvfb :99 -screen 0 1440x900x24 -nolisten tcp >/tmp/xvfb.log 2>&1 </dev/null & sleep 2; fi
+if ! probe 5900; then nohup x11vnc -display :99 -forever -shared -nopw -listen 127.0.0.1 -rfbport 5900 -quiet >/tmp/x11vnc.log 2>&1 </dev/null & sleep 1; fi
+if ! probe 6080; then nohup websockify --web=/usr/share/novnc 0.0.0.0:6080 127.0.0.1:5900 >/tmp/websockify.log 2>&1 </dev/null & sleep 1; fi
+probe x && probe 5900 && probe 6080`;
     const process = await this.ctx.container.exec(['bash', '-lc', script]);
     const output = await process.output();
     return output.exitCode === 0;
@@ -166,7 +170,7 @@ export class SlotContainer extends DurableObject {
     }
     if (parts[1] === 'display' && request.method === 'POST') {
       const displayReady = await this.repairDisplay(brand);
-      const process = await this.ctx.container.exec(['bash', '-lc', `ps -eo pid,comm,args | grep -E '[X]vfb|[x]11vnc|[w]ebsockify' | head -n 12; tail -n 4 /tmp/xvfb.log /tmp/x11vnc.log /tmp/websockify.log 2>/dev/null | sed -E 's#https?://[^ ]+#[URL]#g'`]);
+      const process = await this.ctx.container.exec(['bash', '-lc', `for port in 5900 6080; do if (echo >/dev/tcp/127.0.0.1/$port) >/dev/null 2>&1; then echo "$port=open"; else echo "$port=closed"; fi; done; if test -S /tmp/.X11-unix/X99; then echo 'X99=socket'; else echo 'X99=missing'; fi; tail -n 4 /tmp/xvfb.log /tmp/x11vnc.log /tmp/websockify.log 2>/dev/null | sed -E 's#https?://[^ ]+#[URL]#g'`]);
       const output = await process.output();
       const details = new TextDecoder().decode(output.stdout).slice(-1200);
       return json({ displayReady, details }, displayReady ? 200 : 500);
