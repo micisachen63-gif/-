@@ -10,6 +10,10 @@ const json = (value, status = 200) => new Response(JSON.stringify(value), {
   status,
   headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' },
 });
+function validateScan(summary) {
+  if (!summary?.games?.length || !summary.games.every(item => item.scan?.ok === false)) return summary;
+  return { ...summary, ok: false, error: summary.error || '所有遊戲均未完成掃描' };
+}
 
 async function digest(value, key) {
   const secret = await crypto.subtle.importKey('raw', new TextEncoder().encode(key),
@@ -147,7 +151,8 @@ probe x && probe 5900 && probe 6080`;
         await this.ctx.storage.setAlarm(Date.now() + 60000);
         return;
       }
-      await this.ctx.storage.put('lastResult', status.last);
+      const summary = validateScan(status.summary);
+      await this.ctx.storage.put('lastResult', { ...status.last, ok: status.last?.ok === true && summary?.ok === true });
       await this.ctx.storage.delete('pending');
       await this.save();
       await this.ctx.container.setInactivityTimeout(2 * 60 * 1000);
@@ -206,6 +211,8 @@ probe x && probe 5900 && probe 6080`;
       if (!this.ctx.container.running) return json({ running: false, snapshotAt, lastResult });
       const port = await this.ready(brand);
       const live = await (await port.fetch('http://container/status')).json();
+      live.summary = validateScan(live.summary);
+      if (live.last && live.summary?.ok === false) live.last.ok = false;
       if (live.current) await this.ctx.container.setInactivityTimeout(50 * 60 * 1000);
       return json({ running: true, snapshotAt, lastResult, live });
     }

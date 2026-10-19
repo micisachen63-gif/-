@@ -125,6 +125,10 @@ async function main() {
     rooms: rooms.filter((room) => room.game === game.name).length,
     scan: scanStatus.find((item) => item.game === game.name) ?? null,
   }));
+  if (runState.games.length && runState.games.every((item) => item.scan?.ok === false)) {
+    const cause = runState.games[0].scan?.error || '原因不明';
+    throw new Error(`所有指定遊戲都未完成掃描；未發送選台通知。首個錯誤：${cause}`);
+  }
   log(`略過二次驗證，候選掃描 ${rawRooms.length} 台空桌，挑出 ${rooms.length} 台（每款最多 ${config.maxRooms}）`);
   const messages = buildPerGameMessages(rooms, selectedGames);
   const expectedGames = selectedGames.map((g) => g.name);
