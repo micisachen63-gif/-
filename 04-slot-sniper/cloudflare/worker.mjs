@@ -109,6 +109,20 @@ probe x && probe 5900 && probe 6080`;
     return output.exitCode === 0;
   }
 
+  async restart(brand) {
+    if (this.ctx.container.running) {
+      const live = await (await (await this.ready(brand)).fetch('http://container/status')).json();
+      if (live.current) return json({ error: 'A scan or login is still running' }, 409);
+      const process = await this.ctx.container.exec(['bash', '-lc', 'rm -f /tmp/.X99-lock /tmp/.X11-unix/X99']);
+      if ((await process.output()).exitCode !== 0) return json({ error: 'Unable to clean display sockets' }, 500);
+      await this.save();
+      await this.ctx.container.destroy();
+    }
+    const port = await this.ready(brand, 30 * 60 * 1000);
+    const health = await (await port.fetch('http://container/health')).json();
+    return json({ restarted: health.ok === true, displayReady: await this.repairDisplay(brand) });
+  }
+
   async startScheduled(brand, scheduleAt) {
     const key = `${brand}:${scheduleAt}`;
     if (await this.ctx.storage.get('lastScheduledKey') === key) return { skipped: 'already scheduled' };
@@ -159,6 +173,7 @@ probe x && probe 5900 && probe 6080`;
     }
     if (parts[1] === 'snapshot' && request.method === 'POST') return this.save();
     if (parts[1] === 'rebase' && request.method === 'POST') return this.rebase(brand);
+    if (parts[1] === 'restart' && request.method === 'POST') return this.restart(brand);
     if (parts[1] === 'patch-lottery' && request.method === 'POST') {
       if (brand !== 'yingma' || !this.ctx.container.running) return json({ error: 'Unavailable' }, 409);
       const script = `const fs=require('fs');const file='/app/04-slot-sniper/yingma/src/site.js';let source=fs.readFileSync(file,'utf8');const pattern=/  if \\(src\\.includes\\('ActivityLottery'\\)\\) \\{[\\s\\S]*?\\n  \\}\\n  await page\\.keyboard\\.press/;if(!pattern.test(source))throw Error('Lottery block not found');source=source.replace(pattern,\`  if (src.includes('ActivityLottery')) {\n    await page.evaluate(() => {\n      document.querySelector('#page-modal0')?.remove();\n      document.querySelectorAll('.mask-transparent').forEach((element) => element.remove());\n    });\n    console.log('[site] 已略過「每日抽抽樂」彈窗');\n    return;\n  }\n  await page.keyboard.press\`);fs.writeFileSync(file,source);console.log('patched')`;
