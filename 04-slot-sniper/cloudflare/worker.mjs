@@ -212,7 +212,9 @@ probe x && probe 5900 && probe 6080`;
       const port = await this.ready(brand);
       const live = await (await port.fetch('http://container/status')).json();
       live.summary = validateScan(live.summary);
-      if (live.last && live.summary?.ok === false) live.last.ok = false;
+      if (live.last?.command === 'run' && live.summary?.ok === false
+        && Date.parse(live.summary.finishedAt) >= Date.parse(live.last.startedAt)
+        && Date.parse(live.summary.finishedAt) <= Date.parse(live.last.finishedAt)) live.last.ok = false;
       if (live.current) await this.ctx.container.setInactivityTimeout(50 * 60 * 1000);
       return json({ running: true, snapshotAt, lastResult, live });
     }
