@@ -145,6 +145,15 @@ export class SlotContainer extends DurableObject {
     }
     if (parts[1] === 'snapshot' && request.method === 'POST') return this.save();
     if (parts[1] === 'rebase' && request.method === 'POST') return this.rebase(brand);
+    if (parts[1] === 'patch-lottery' && request.method === 'POST') {
+      if (brand !== 'yingma' || !this.ctx.container.running) return json({ error: 'Unavailable' }, 409);
+      const script = `const fs=require('fs');const file='/app/04-slot-sniper/yingma/src/site.js';let source=fs.readFileSync(file,'utf8');const pattern=/  if \\(src\\.includes\\('ActivityLottery'\\)\\) \\{[\\s\\S]*?\\n  \\}\\n  await page\\.keyboard\\.press/;if(!pattern.test(source))throw Error('Lottery block not found');source=source.replace(pattern,\`  if (src.includes('ActivityLottery')) {\n    await page.evaluate(() => {\n      document.querySelector('#page-modal0')?.remove();\n      document.querySelectorAll('.mask-transparent').forEach((element) => element.remove());\n    });\n    console.log('[site] 已略過「每日抽抽樂」彈窗');\n    return;\n  }\n  await page.keyboard.press\`);fs.writeFileSync(file,source);console.log('patched')`;
+      const process = await this.ctx.container.exec(['node', '-e', script]);
+      const output = await process.output();
+      if (output.exitCode !== 0) return json({ error: 'Patch failed' }, 500);
+      await this.save();
+      return json({ patched: true, snapshotSaved: true });
+    }
     if (parts[1] === 'diagnostics' && request.method === 'GET') {
       await this.ready(brand, 10 * 60 * 1000);
       const script = `const fs=require('fs');const root='/app/04-slot-sniper/${brand}';let lines=[];let games=[];try{lines=fs.readFileSync(root+'/logs/bot.log','utf8').trim().split('\\n').slice(-25)}catch{};try{games=Object.keys(JSON.parse(fs.readFileSync(root+'/.auth/game-urls.json','utf8')))}catch{};console.log(JSON.stringify({lines,games}))`;

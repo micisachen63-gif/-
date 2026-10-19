@@ -112,7 +112,7 @@ async function waitForLobby(page, timeout = 60000) {
 }
 
 // 大廳彈窗：一般廣告（AdNormal）有關閉鈕，直接按。
-// 「每日抽抽樂」（ActivityLottery）沒有關閉鈕：照手動做法點一張卡，再一直點同一個位置直到活動頁結束（每天只出現一次）。
+// 「每日抽抽樂」（ActivityLottery）沒有可靠的關閉鈕；掃台時略過這層畫面。
 async function closeLobbyModal(page) {
   const modal = page.locator('#page-modal0');
   const src = (await page.locator('#page-modal0 iframe').first().getAttribute('src').catch(() => '')) || '';
@@ -153,21 +153,11 @@ async function closeLobbyModal(page) {
     }
   }
   if (src.includes('ActivityLottery')) {
-    const box = await modal.boundingBox();
-    if (!box) return;
-    // 上排中間那張卡（畫面置中，約在高度 39% 的位置）。
-    const x = box.x + box.width * 0.5;
-    const y = box.y + box.height * 0.39;
-    console.log('[site] 偵測到「每日抽抽樂」，點一張卡並連點同一位置結束活動頁');
-    for (let i = 0; i < 25; i++) {
-      if (!(await modal.isVisible().catch(() => false))) {
-        console.log(`[site] 「每日抽抽樂」已結束（點了 ${i} 下）`);
-        return;
-      }
-      await page.mouse.click(x, y);
-      await page.waitForTimeout(800);
-    }
-    if (await modal.isVisible().catch(() => false)) throw new Error('「每日抽抽樂」點了 25 下仍未結束');
+    await page.evaluate(() => {
+      document.querySelector('#page-modal0')?.remove();
+      document.querySelectorAll('.mask-transparent').forEach((element) => element.remove());
+    });
+    console.log('[site] 已略過「每日抽抽樂」彈窗');
     return;
   }
   await page.keyboard.press('Escape').catch(() => {});
