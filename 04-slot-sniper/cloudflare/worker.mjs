@@ -80,6 +80,23 @@ export class SlotContainer extends DurableObject {
     return json({ saved: true, at: new Date().toISOString() });
   }
 
+  async rebase(brand) {
+    if (this.ctx.container.running) {
+      const live = await (await (await this.ready(brand)).fetch('http://container/status')).json();
+      if (live.current) return json({ error: 'A scan or login is still running' }, 409);
+    }
+    const snapshot = await this.ctx.storage.get('snapshot');
+    if (snapshot) {
+      await this.ctx.storage.put('previousSnapshot', snapshot);
+      await this.ctx.storage.put('previousSnapshotAt', await this.ctx.storage.get('snapshotAt'));
+    }
+    await this.ctx.storage.delete('snapshot');
+    await this.ctx.storage.delete('snapshotAt');
+    if (this.ctx.container.running) await this.ctx.container.destroy();
+    await this.ready(brand, 30 * 60 * 1000);
+    return json({ rebased: true, previousSnapshotSaved: Boolean(snapshot), loginRequired: true });
+  }
+
   async startScheduled(brand, scheduleAt) {
     const key = `${brand}:${scheduleAt}`;
     if (await this.ctx.storage.get('lastScheduledKey') === key) return { skipped: 'already scheduled' };
@@ -127,6 +144,7 @@ export class SlotContainer extends DurableObject {
       return this.ctx.container.getTcpPort(6080).fetch(new Request(target.toString(), request));
     }
     if (parts[1] === 'snapshot' && request.method === 'POST') return this.save();
+    if (parts[1] === 'rebase' && request.method === 'POST') return this.rebase(brand);
     if (parts[1] === 'diagnostics' && request.method === 'GET') {
       await this.ready(brand, 10 * 60 * 1000);
       const script = `const fs=require('fs');const root='/app/04-slot-sniper/${brand}';let lines=[];let games=[];try{lines=fs.readFileSync(root+'/logs/bot.log','utf8').trim().split('\\n').slice(-25)}catch{};try{games=Object.keys(JSON.parse(fs.readFileSync(root+'/.auth/game-urls.json','utf8')))}catch{};console.log(JSON.stringify({lines,games}))`;
@@ -152,7 +170,12 @@ export class SlotContainer extends DurableObject {
     }
     if (parts[1] === 'dry-run' && request.method === 'POST') {
       const port = await this.ready(brand, 50 * 60 * 1000);
-      return port.fetch('http://container/run?dry=1', { method: 'POST' });
+      const response = await port.fetch('http://container/run?dry=1', { method: 'POST' });
+      if (response.ok) {
+        await this.ctx.storage.put('pending', { brand, dryRun: true, startedAt: Date.now() });
+        await this.ctx.storage.setAlarm(Date.now() + 60000);
+      }
+      return response;
     }
     return json({ error: 'Not found' }, 404);
   }
