@@ -197,13 +197,13 @@ probe x && probe 5900 && probe 6080`;
     }
     if (parts[1] === 'diagnostics' && request.method === 'GET') {
       await this.ready(brand, 10 * 60 * 1000);
-      const script = `const fs=require('fs');const root='/app/04-slot-sniper/${brand}';let lines=[];let games=[];try{lines=fs.readFileSync(root+'/logs/bot.log','utf8').trim().split('\\n').slice(-25)}catch{};try{games=Object.keys(JSON.parse(fs.readFileSync(root+'/.auth/game-urls.json','utf8')))}catch{};console.log(JSON.stringify({lines,games}))`;
+      const script = `const fs=require('fs');const root='/app/04-slot-sniper/${brand}';let lines=[];let games=[];try{lines=fs.readFileSync(root+'/logs/bot.log','utf8').trim().split('\\n').slice(-25)}catch{};try{games=Object.keys(JSON.parse(fs.readFileSync(root+'/.auth/game-urls.json','utf8')))}catch{};console.log(JSON.stringify({lines,games,location:process.env.CLOUDFLARE_LOCATION||''}))`;
       const process = await this.ctx.container.exec(['node', '-e', script]);
       const output = await process.output();
       if (output.exitCode !== 0) return json({ error: 'Unable to read diagnostics' }, 500);
       const data = JSON.parse(new TextDecoder().decode(output.stdout));
       const lines = data.lines.map(line => line.replace(/https?:\/\/\S+/g, '[URL]').replace(/\b\d{7,12}:[A-Za-z0-9_-]{35}\b/g, '[BOT_TOKEN]'));
-      return json({ lines, games: data.games });
+      return json({ lines, games: data.games, location: data.location });
     }
     if (parts[1] === 'status' && request.method === 'GET') {
       const snapshotAt = await this.ctx.storage.get('snapshotAt');
