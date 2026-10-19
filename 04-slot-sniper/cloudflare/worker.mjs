@@ -97,6 +97,14 @@ export class SlotContainer extends DurableObject {
     return json({ rebased: true, previousSnapshotSaved: Boolean(snapshot), loginRequired: true });
   }
 
+  async repairDisplay(brand) {
+    await this.ready(brand, 30 * 60 * 1000);
+    const script = `if ! pgrep -x Xvfb >/dev/null; then rm -f /tmp/.X99-lock /tmp/.X11-unix/X99; nohup Xvfb :99 -screen 0 1440x900x24 -nolisten tcp >/tmp/xvfb.log 2>&1 </dev/null & sleep 2; fi; if ! pgrep -x x11vnc >/dev/null; then nohup x11vnc -display :99 -forever -shared -nopw -listen 127.0.0.1 -rfbport 5900 -quiet >/tmp/x11vnc.log 2>&1 </dev/null & fi; if ! pgrep -f '[w]ebsockify --web' >/dev/null; then nohup websockify --web=/usr/share/novnc 0.0.0.0:6080 127.0.0.1:5900 >/tmp/websockify.log 2>&1 </dev/null & fi; sleep 1; pgrep -x Xvfb >/dev/null && pgrep -x x11vnc >/dev/null && pgrep -f '[w]ebsockify --web' >/dev/null`;
+    const process = await this.ctx.container.exec(['bash', '-lc', script]);
+    const output = await process.output();
+    return output.exitCode === 0;
+  }
+
   async startScheduled(brand, scheduleAt) {
     const key = `${brand}:${scheduleAt}`;
     if (await this.ctx.storage.get('lastScheduledKey') === key) return { skipped: 'already scheduled' };
@@ -137,7 +145,9 @@ export class SlotContainer extends DurableObject {
     const brand = parts[2];
     if (!BRANDS.includes(brand)) return json({ error: 'Invalid brand' }, 400);
     if (parts[1] === 'console') {
-      await this.ready(brand, 30 * 60 * 1000);
+      if (parts[3] === 'vnc.html' || parts[3] === 'websockify') {
+        if (!(await this.repairDisplay(brand))) return json({ error: 'Display unavailable' }, 503);
+      } else await this.ready(brand, 30 * 60 * 1000);
       const suffix = '/' + parts.slice(3).join('/');
       const target = new URL(`http://container${suffix}`);
       target.search = url.search;
@@ -153,6 +163,10 @@ export class SlotContainer extends DurableObject {
       if (output.exitCode !== 0) return json({ error: 'Patch failed' }, 500);
       await this.save();
       return json({ patched: true, snapshotSaved: true });
+    }
+    if (parts[1] === 'display' && request.method === 'POST') {
+      const displayReady = await this.repairDisplay(brand);
+      return json({ displayReady }, displayReady ? 200 : 500);
     }
     if (parts[1] === 'diagnostics' && request.method === 'GET') {
       await this.ready(brand, 10 * 60 * 1000);
@@ -174,6 +188,7 @@ export class SlotContainer extends DurableObject {
       return json({ running: true, snapshotAt, lastResult, live });
     }
     if (parts[1] === 'login' && request.method === 'POST') {
+      if (!(await this.repairDisplay(brand))) return json({ error: 'Display unavailable' }, 503);
       const port = await this.ready(brand, 30 * 60 * 1000);
       return port.fetch('http://container/login', { method: 'POST' });
     }
