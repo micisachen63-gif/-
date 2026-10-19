@@ -166,7 +166,10 @@ export class SlotContainer extends DurableObject {
     }
     if (parts[1] === 'display' && request.method === 'POST') {
       const displayReady = await this.repairDisplay(brand);
-      return json({ displayReady }, displayReady ? 200 : 500);
+      const process = await this.ctx.container.exec(['bash', '-lc', `for name in Xvfb x11vnc; do if pgrep -x "$name" >/dev/null; then echo "$name=running"; else echo "$name=missing"; fi; done; if pgrep -f '[w]ebsockify --web' >/dev/null; then echo 'websockify=running'; else echo 'websockify=missing'; fi; tail -n 4 /tmp/xvfb.log /tmp/x11vnc.log /tmp/websockify.log 2>/dev/null | sed -E 's#https?://[^ ]+#[URL]#g'`]);
+      const output = await process.output();
+      const details = new TextDecoder().decode(output.stdout).slice(-1200);
+      return json({ displayReady, details }, displayReady ? 200 : 500);
     }
     if (parts[1] === 'diagnostics' && request.method === 'GET') {
       await this.ready(brand, 10 * 60 * 1000);
