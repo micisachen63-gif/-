@@ -10,7 +10,7 @@
   "containers": [{
     "class_name": "SlotContainer",
     "scheduling_policy": "durable_object",
-    "images": { "base": "registry.cloudflare.com/48259a9f84c8307f8de8ceaf704b9f8f/slot-sniper-cloud-slotcontainer-base@sha256:1e795b0e5d6339be73a11fa6540398abe7b5216fdc578766bdf1d4fd69154e5e" }
+    "images": { "base": { "image": "registry.cloudflare.com/48259a9f84c8307f8de8ceaf704b9f8f/slot-sniper-cloud-slotcontainer-base@sha256:1e795b0e5d6339be73a11fa6540398abe7b5216fdc578766bdf1d4fd69154e5e" } }
   }],
   "durable_objects": { "bindings": [{ "name": "SLOT_CONTAINER", "class_name": "SlotContainer" }] },
   "exports": { "SlotContainer": { "type": "durable-object", "storage": "sqlite" } },
